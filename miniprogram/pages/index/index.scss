@@ -1,0 +1,207 @@
+page {
+  background-color:#f7f6f6;
+}
+.swipercontent{
+  width: 708rpx;
+  height: 312rpx;
+  margin: 0 auto;
+  
+}
+.item{
+  height: 100%;
+  line-height: 150rpx;
+  text-align: center;
+  border-radius: 12rpx;
+}
+.item image{
+  width: 708rpx;
+  height: 312rpx;
+}
+
+.swipercontent .item:nth-child(1){
+  background-color: rgb(149, 184, 115);
+}
+.swipercontent .item:nth-child(2){
+  background-color: rgb(161, 146, 204);
+}
+.swipercontent .item:nth-child(3){
+  background-color: rgb(192, 130, 187);
+}
+
+.content{
+  padding-top: 94rpx;
+  height: 564rpx;
+  width: 100%;
+  background-color: #1296db;
+  box-sizing: border-box;
+}
+.country{
+  width: 624rpx;
+  height: 386rpx;
+  border-radius: 28rpx;
+  margin: 64rpx auto;
+  background-color: rgba(255, 255, 255, 100);
+  text-align: center;
+  box-shadow: 0rpx 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
+  border: 2rpx solid rgba(187, 187, 187, 100);
+}
+.country .t-con{
+  display: flex;
+  justify-content: space-around;
+  font-size: 62rpx;
+  margin-top: 112rpx;
+}
+.country .b-con{
+  width: 324rpx;
+  height: 76rpx;
+  background-color: #4e148c;
+  color: white;
+  margin: 64rpx auto;
+  text-align: center;
+}
+.country .t-con .item_2 image{
+  width: 92rpx;
+  height: 92rpx;
+}
+.content .service{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .service .relation{
+  height: 100rpx;
+  width: 714rpx;
+  font-size: 28rpx;
+  background-color: #ff6600;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+}
+.content .service .relation image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.content .service .relation .item1 {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 50rpx;
+}
+.content .service .relation .item2{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  width: 236rpx;
+  height: 100rpx;
+  margin-right: 256rpx;
+}
+.content .service .relation .item2 .text1{
+  font-size: 32rpx;
+  color: white;
+}
+.content .service .relation .item2 .text2{
+  font-size: 24rpx;
+  color:#e3dcdb;
+}
+.content .service .relation .item3{
+  width: 54rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.content .service .relation .item3 image{
+  width: 54rpx;
+  height: 54rpx;
+}
+.content .carriage{
+  margin-top: 50rpx;
+  width: 750rpx;
+  height: 324rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.content .carriage .carriage_con{
+  width: 324rpx;
+  height: 324rpx;
+  background-color: violet;
+  border-radius: 28rpx;
+  position: relative;
+}
+.content .carriage .l-content{
+  background-color: #9977bb;
+  color: white;
+}
+.content .carriage .carriage_con .carriage_iten1{
+  font-size: 56rpx;
+  margin: 34rpx 0 0 30rpx ;
+}
+.content .carriage .carriage_con .carriage_iten2{
+  font-size: 28rpx;
+  margin: 14rpx 0 0 30rpx ;
+}
+.content .carriage .carriage_con .carriage_iten4{
+  width: 178rpx;
+  height: 178rpx;
+  position: absolute;
+  right: 2rpx;
+  bottom: 2rpx;
+}
+.content .carriage .r-content .carriage_iten4{
+  width: 128rpx;
+  height: 128rpx;
+  position: absolute;
+  right: 4rpx;
+  bottom: 16rpx;
+}
+.content .carriage .carriage_con .carriage_iten3{
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #4e148c;
+  bottom: 50rpx;
+  left:30rpx;
+}
+.content .carriage .r-content .carriage_iten1{
+  color: #e7691d;
+}
+.content .carriage .r-content .carriage_iten2{
+  color: #e7691d;
+}
+.content .carriage .r-content .carriage_iten3{
+  background-color: #ff6200;
+}
+.content .carriage .r-content{
+  background-color:#fc9d62;
+}
+.content .carriage_flow .carriage_img{
+  width: 750rpx;
+  height: 218rpx;
+  background-color: violet;
+}
+.content .carriage_flow .carriage_title{
+  font-size: 56rpx;
+  padding: 30rpx 0 10rpx 30rpx;
+}
+
+.content .foot{
+  padding:60rpx 0rpx ;
+  padding-top: 80rpx;
+  box-sizing: border-box;
+}
+.content .foot button{
+  width: 660rpx;
+  height: 80rpx;
+  color: white;
+  font-size: 32rpx;
+  background-color: #4c168e;
+  border-radius: 38rpx;
+}
+.content .foot view{
+  color: #4c168e;
+  font-size: 28rpx;
+  padding: 10rpx;
+  width: 400rpx;
+  margin: 0 auto;
+}

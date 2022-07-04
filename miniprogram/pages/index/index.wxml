@@ -1,0 +1,58 @@
+<view class="content">
+  <swiper class="swipercontent" indicator-dots indicator-active-color="white" autoplay interval="1800" circular>
+  <swiper-item class="item"> 
+    <view><image src="../../assets/swiper/1.png" mode="aspectFit"></image></view>
+  </swiper-item>
+  <swiper-item class="item">
+    <view><image src="../../assets/swiper/1.png" mode="aspectFit"></image></view>
+  </swiper-item>
+  <swiper-item class="item"> 
+    <view><image src="../../assets/swiper/1.png" mode="aspectFit"></image></view>
+  </swiper-item>
+</swiper>
+  <view class="country">
+      <view class="t-con">
+        <view>中国</view>
+        <view class="item_2"><image src="../../assets/smoicon/feji.png" mode="aspectFit"></image></view>
+        <view>美国</view>
+      </view>
+      <button class="b-con">立即转运</button>
+  </view>
+  <view class="service">
+    <view class="relation">
+      <view class="item1">
+        <image src="../../assets/smoicon/3.png"></image>
+      </view>
+      <view class="item2">
+        <view class="text1">联系河马</view>
+        <view class="text2">为你解决下单疑问</view>
+      </view>
+      <view class="item3">
+      <image src="../../assets/smoicon/4.png"></image>
+      </view>
+    </view>
+  </view>
+<view class="carriage">
+  <view class="l-content carriage_con">
+    <view class="carriage_iten1">转运须知</view>
+    <view class="carriage_iten2">流程和注意事项</view>
+    <image class="carriage_iten3" src="../../assets/smoicon/5.png"></image>
+    <image class="carriage_iten4" src="../../assets/smoicon/6.png"></image>
+  </view>
+  <view class="r-content carriage_con">
+    <view class="carriage_iten1">运费估算</view>
+    <view class="carriage_iten2">费用心中有数</view>
+    <image class="carriage_iten3" src="../../assets/smoicon/5.png"></image>
+    <image class="carriage_iten4" src="../../assets/smoicon/7.png"></image>
+    </view>
+</view>
+<view class="carriage_flow">
+  <view class="carriage_title">轻松转运</view>
+  <image class="carriage_img" src="../../assets/smoicon/9.png"></image>
+</view>
+<view class="foot">
+  <button>复制仓库地址去购物</button>
+  <view>电商平台的收货地址请填写我们</view>
+</view>
+</view>
+
