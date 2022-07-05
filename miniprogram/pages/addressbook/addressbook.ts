@@ -1,7 +1,10 @@
-// pages/address/address.ts
+
+// import { areaList } from '../../miniprogram_npm/@vant/area-data/area-data';
+// import { areaList } from '../../miniprogram_npm/@vant/area/area';
 Page({
 
   data: {
+
     // 验证提示
     tipName:"",
     tipphone:"",
@@ -14,6 +17,11 @@ Page({
     Address:"",
     City:"",
     PostCode:"",
+
+    // 弹窗
+    checked: true,
+    show: false, //选择国家
+    // areaList, //省市区数据
   },
 
   //验证名字 
@@ -91,54 +99,69 @@ Page({
       })
     }
   },
+  // 显示选择国家的弹窗
+  showPopup() {
+    this.setData({ show: true });
+  },
+  // 关闭弹窗
+  onClose() {
+    this.setData({ show: false });
+  },
+  // 是否设置为默认地址
+  onChange({ detail }) {
+    // 需要手动对 checked 状态进行更新
+    this.setData({ checked: detail });
+  },
+
   // 提交表单的时候触发,每个验证
   submit(){
-    let regname = /[^\u4e00-\u9fa5]+/  //非中文
-    let regiphone = /^1[3-9]\d{9}$/  //电话
-    let PostCodereg = /^[0-9]{6}$/ //邮编
-    let istrueName = regname.test(this.data.Name)
-    let istrueiphone = regiphone.test(this.data.phone)
-    let istrueAddress = regname.test(this.data.Address)
-    let istrueCity = regname.test(this.data.City)
-    let istruePostCode = PostCodereg.test(this.data.PostCode)
-   if(!istrueName){
-      this.setData({
-        tipName:"请输入英文填写名字"
-      })
-      return
-   }else if(!istrueiphone){
-    this.setData({
-      tipphone:"非法电话号码"
-    })
-    return
-   }else if(!istrueAddress){
-    this.setData({
-      tipAddress:"请输入英文地址"
-    })
-    return
-   }else if(!istrueCity){
-    this.setData({
-       tipCity:"不能包含中文"
-    })
-    return
-   }else if(!istruePostCode){
-    this.setData({
-      tipPostCode:"需填写6位由字母开头丶数字英文组成的邮编"
-    })
-    return
-   }else{
-    //  验证完毕需要提交到数据库
-     wx.navigateTo({
-       url:`/pages/informed/informed?Name=${this.data.Name}&phone=${this.data.phone}
-       &Address=${this.data.Address}&City=${this.data.City}&PostCode=${this.data.PostCode}`
-     })
-   }
+    // let regname = /[^\u4e00-\u9fa5]+/  //非中文
+    // let regiphone = /^1[3-9]\d{9}$/  //电话
+    // let PostCodereg = /^[0-9]{6}$/ //邮编
+    // let istrueName = regname.test(this.data.Name)
+    // let istrueiphone = regiphone.test(this.data.phone)
+    // let istrueAddress = regname.test(this.data.Address)
+    // let istrueCity = regname.test(this.data.City)
+    // let istruePostCode = PostCodereg.test(this.data.PostCode)
+  //  if(!istrueName){
+  //     this.setData({
+  //       tipName:"请输入英文填写名字"
+  //     })
+  //     return
+  //  }else if(!istrueiphone){
+  //   this.setData({
+  //     tipphone:"非法电话号码"
+  //   })
+  //   return
+  //  }else if(!istrueAddress){
+  //   this.setData({
+  //     tipAddress:"请输入英文地址"
+  //   })
+  //   return
+  //  }else if(!istrueCity){
+  //   this.setData({
+  //      tipCity:"不能包含中文"
+  //   })
+  //   return
+  //  }else if(!istruePostCode){
+  //   this.setData({
+  //     tipPostCode:"需填写6位由字母开头丶数字英文组成的邮编"
+  //   })
+  //   return
+  //  }else{
+  //   //  验证完毕需要提交到数据库
+  //    wx.navigateTo({
+  //      url:`/pages/myaddress/myaddress?Name=${this.data.Name}&phone=${this.data.phone}
+  //      &Address=${this.data.Address}&City=${this.data.City}&PostCode=${this.data.PostCode}`
+  //    })
+  //  }
+
+   wx.navigateTo({
+    url:`/pages/myaddress/myaddress?Name=${this.data.Name}&phone=${this.data.phone}
+    &Address=${this.data.Address}&City=${this.data.City}&PostCode=${this.data.PostCode}`
+  })
   },
-  select(){
-    wx.navigateTo({
-      url:`/pages/myaddress/myaddress`
-    })
-  },
+
   onLoad() {
 
   },

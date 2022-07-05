@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30rpx;
+    padding: 50rpx;
     box-sizing: border-box;
     .con{
       background-color: #1296db;
@@ -23,9 +23,38 @@
     margin: 50rpx;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction:column;
+    font-size: 26rpx;
+    height: 133rpx;
     .van-radio{
       font-size: 25rpx;
     }
+  }
+}
+
+.text{
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text{
+    font-weight: 700;
+  }
+  view{
+    margin: 35rpx 0;
+  }
+}
+
+.tltle{
+  font-weight: 700;
+}
+
+.time{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read{
+  .van-button{
+    width: 250rpx;
   }
 }

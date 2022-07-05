@@ -1,5 +1,53 @@
-<view class="img">
+<!-- 空地址显示 -->
+<view class="img" wx:if="{{isaddress}}">
   <image src="../../assets/smoicon/18.png"></image>
-  <van-button round type="info">添加地址</van-button>
+  <van-button round type="info" catchtap="address">添加地址</van-button>
   <van-icon name="newspaper-o" />
+</view>
+<!-- 非空地址显示 -->
+
+<!-- 默认地址 -->
+<view class="default">
+    <view class="child">
+      <view class="title">我</view>
+    </view>
+    <view class="child">
+      <view class="son">
+        <view>KK</view>
+        <view>186****0130</view>
+      </view>
+      <view>
+       <view class="address">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+      </view>
+    </view>
+</view>
+<view class="tail">
+  <view><van-checkbox value="{{ checked }}" bind:change="onChange"></van-checkbox> <text class="addres">默认寄样地址</text></view>
+  <view>
+      <van-icon name="edit" class="iocn" />
+      <van-icon name="delete-o" class="iocn "/>
+  </view>
+</view>
+
+<!-- 可以设置为默认地址 -->
+<view class="default">
+    <view class="child">
+      <view class="title">我</view>
+    </view>
+    <view class="child">
+      <view class="son">
+        <view>KK</view>
+        <view>186****0130</view>
+      </view>
+      <view>
+       <view class="address">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+      </view>
+    </view>
+</view>
+<view class="tail">
+  <view><van-checkbox value="{{ ischecked }}" bind:change="onChange"></van-checkbox> <text class="addres">设置为默认寄样地址</text></view>
+  <view>
+      <van-icon name="edit" class="iocn" />
+      <van-icon name="delete-o" class="iocn "/>
+  </view>
 </view>

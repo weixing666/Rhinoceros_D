@@ -1,0 +1,31 @@
+<view class="ordercart">
+    <view class="clide">
+      <view>订单号：</view>
+      <view>20220509140712345678</view>
+      <view class="copy">复制</view>
+    </view>
+    <view class="clide">
+      <view>转运线路：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>预选渠道：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>订单状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>下单时间：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>订单状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>支付状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+</view>

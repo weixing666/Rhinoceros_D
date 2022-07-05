@@ -41,7 +41,7 @@
     <van-cell is-link title="活动中心" link-type="navigateTo" url="/pages/activity/activity"/>
     <van-cell is-link title="练习客服" link-type="navigateTo" url="/pages/service/service"/>
     <van-cell is-link title="转运流程" link-type="navigateTo" url="/pages/flow/flow"/>
-    <van-cell is-link title="转运须知" link-type="navigateTo" url="/pages/informed/informed"/>
+    <van-cell is-link title="转运须知" link-type="navigateTo" catchtap="goinformed"/>
     <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/aboutme/aboutme"/>
   </van-cell-group>
 </view>

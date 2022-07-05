@@ -1,28 +1,19 @@
-// pages/myaddress/myaddress.ts
+
 Page({
-
   data: {
-    // 是否空地址
-    isaddress:false,
-    //默认寄样地址
     checked: true,
-    // 是否设置为默认寄样地址
-    ischecked: false,
+    show: false, //选择国家
   },
-
-  address(){
-    wx.navigateTo({
-      url:`/pages/addressbook/addressbook`
-    })
+  showPopup() {
+    this.setData({ show: true });
   },
-  onChange(event) {
-    this.setData({
-      checked: event.detail,
-    });
+  onClose() {
+    this.setData({ show: false });
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  onChange({ detail }) {
+    // 需要手动对 checked 状态进行更新
+    this.setData({ checked: detail });
+  },
   onLoad() {
 
   },

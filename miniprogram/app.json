@@ -16,7 +16,11 @@
     "van-picker": "@vant/weapp/picker/index",
     "van-toast": "@vant/weapp/toast/index",
     "van-radio": "@vant/weapp/radio/index",
-    "van-radio-group": "@vant/weapp/radio-group/index"
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-area": "@vant/weapp/area/index"
   },
   "pages": [
     "pages/my/my",
@@ -35,7 +39,11 @@
     "pages/aboutme/aboutme",
     "pages/service/service",
     "pages/flow/flow",
-    "pages/activity/activity"
+    "pages/activity/activity",
+    "pages/pack/pack",
+    "pages/unpaid/unpaid",
+    "pages/Addaddress/Addaddress",
+    "pages/addressbook/addressbook"
   ],
   "window": {
     "backgroundTextStyle": "light",

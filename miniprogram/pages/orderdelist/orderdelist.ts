@@ -4,7 +4,12 @@ Page({
   data: {
     active: 0,
   },
-
+  examine(){
+    wx.navigateTo({
+      url:`/pages/pack/pack`,
+    })
+  },
+  
   onLoad() {
 
   },

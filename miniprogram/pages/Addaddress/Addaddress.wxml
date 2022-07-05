@@ -1,0 +1,36 @@
+<!-- 添加地址 -->
+<view class="address">
+  <view class="child">
+    <view class="son">Name：</view>
+    <view class="son"><input type="text" placeholder="Please fill in the recipient‘s name"/></view>
+  </view>
+  <view class="child">
+    <view class="son">Phone：</view>
+    <view class="son"><input type="text" placeholder="Please fill in the recipient‘s phone"/></view>
+  </view>
+  <view class="child">
+    <view class="son">Address：</view>
+    <view class="son"><input type="text" placeholder="Please fill in the address"/></view>
+  </view>
+  <view class="child">
+    <view class="son">City：</view>
+    <view class="son"><input type="text" placeholder="Please fill in the address"/></view>
+  </view>
+  <view class="child">
+    <view class="son">PostCode：</view>
+    <view class="son"><input type="text" placeholder="Please fill in the postcode"/></view>
+  </view>
+  <view class="child">
+    <view class="son">Country：</view>
+    <view class="son flexend" catchtap="showPopup">Please select a country ></view>
+  </view>
+  <view class="default">
+      <view>设为默认</view>
+      <view><van-switch checked="{{ checked }}" bind:change="onChange" size="48rpx"/></view>
+  </view>
+
+  <view class="btn"><van-button round type="info" size="small">添加地址</van-button></view>
+</view>
+
+<!-- 国家弹窗内容 -->
+<van-popup show="{{ show }}" round  position="bottom" custom-style="height: 20%" bind:close="onClose"/>

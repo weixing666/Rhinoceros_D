@@ -1,0 +1,32 @@
+<view class="content">
+    <view class="child">
+      <view class="son">
+          <view class="iconone"><van-icon name="location-o"/></view>
+      </view>
+      <view class="son">
+        <view class="zison">
+          <view>新希望仓库</view>
+          <view>18688880130</view>
+          <view>复制</view>
+        </view>
+        <view class="zison">
+          <view>深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+        </view>
+      </view>
+    </view>
+    <view class="child">
+      <view class="son">
+          <view class="iconone"><van-icon name="newspaper-o" /></view>
+      </view>
+      <view class="son">
+        <view class="zison">
+          <view>KK Chen</view>
+          <view>18688880130</view>
+          <!-- <view>复制</view> -->
+        </view>
+        <view class="zison">
+          <view>MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+        </view>
+      </view>
+    </view>
+</view>

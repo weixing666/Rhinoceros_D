@@ -1,0 +1,38 @@
+.ordercart{
+  width: 694rpx;
+  height: 450rpx;
+  background-color: rgba(255, 255, 255, 79);
+  font-size: 28px;
+  box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(0, 0, 0, 0.4);
+  margin: 20rpx auto;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+  font-size: 28rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;
+  .clide{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .copy{
+      margin-left: 15rpx;
+      font-size: 22rpx;
+      border: 2rpx solid rgba(217, 241, 221, 100);
+      width: 55rpx;
+      height: 24rpx;
+      border-radius: 8rpx;
+      background-color: rgba(217, 241, 221, 100);
+      color: rgba(64, 184, 80, 100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    view:nth-child(1){
+      width: 150rpx;
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+    }
+  }
+}

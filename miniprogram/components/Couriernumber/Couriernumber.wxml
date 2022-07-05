@@ -1,0 +1,30 @@
+<view class="son son2">
+  <!-- 提示 -->
+    <view class="courier">
+      <view><van-icon name="warning-o" /></view>
+      <view>快递全部到齐点击确认打包后，订单不可修改</view>
+    </view>
+    <!-- 快递个数 -->
+    <view class="courier2">
+      <van-field value="{{ phone }}" label="*快递个数" placeholder="输个数,生成单号输入框" error-message="{{numbertip}}" 
+      border="{{ false }}" title-width="65" bindchange="numberTip"  />
+    </view>
+    <!-- 快递备注 -->
+    <view class="courier3">
+      <view class="courier3_b">
+        <van-field value="{{ message }}"label="备注" type="textarea"  placeholder="请输入备注" autosize border="{{ false }}" title-width="30"  />
+      </view>
+    </view>
+    <!-- 快递单号输入框生成 -->
+    <view class="courier4">
+    <!-- 循环生成快递单号 -->
+      <van-cell-group>
+         <view class="chlid" wx:for="{{quantity}}" wx:key="*this">
+          <van-field value="{{ odd }}" label="{{index + 1}}."  placeholder="请输入快递单号" error-message="单号错误"
+          title-width="2"/>
+          <view class="icon" catchtap="deorder"><van-icon name="delete-o" /></view>
+         </view>
+      </van-cell-group>
+      <button class="supplement" catchtap="addorder">+ 补充快递单号</button>
+    </view>
+  </view>

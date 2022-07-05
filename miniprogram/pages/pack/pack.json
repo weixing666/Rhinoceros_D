@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "awaitpack":"/components/orderdetail/orderdetail"
+  },
+  "navigationBarTitleText": "订单详情"
+}

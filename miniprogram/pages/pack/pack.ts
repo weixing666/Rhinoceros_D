@@ -1,45 +1,18 @@
-// pages/informed/informed.ts
+// pages/pack/pack.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    checked: false,
-    isshow:"",//是否显示已阅读
+
   },
-  iknoway(){
-    wx.navigateBack()
-  },
-  // go我已知悉
-  iknow(){
-    if(this.data.checked === true){
-      wx.navigateTo({
-        url:"/pages/orderdetail/orderdetail"
-      })
-    }else{
-      wx.showToast({
-        title: '请勾选同意协议',
-        // icon: 'error',
-        icon: 'none',
-        duration: 2000
-      })
-    }
-  },
-  // 勾选协议
-  onChange(event:any) {
-    this.setData({
-      checked: event.detail,
-    });
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(Option:any) {
-    let {isshow} = Option
-    this.setData({
-      isshow
-    })
+  onLoad() {
+
   },
 
   /**

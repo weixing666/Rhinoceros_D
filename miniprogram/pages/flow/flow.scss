@@ -1,1 +1,32 @@
-/* pages/flow/flow.wxss */
+.haveread{
+  margin: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .van-button{
+    width: 300rpx;
+  }
+}
+.text{
+  font-size: 25rpx;
+  margin: 50rpx;
+  line-height: 60rpx;
+}
+.tilte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80rpx 0;
+  font-weight: 700;
+  font-size: 40rpx;
+}
+
+.step{
+  font-weight: 700;
+}
+
+.time{
+  display: flex;
+  justify-content: flex-end;
+}

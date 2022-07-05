@@ -45,12 +45,11 @@ Page({
   // 提交订单
   submit(){
     wx.showModal({
-      title:"是否提交单号",
-      content:"请确认快递单号是否无误,一旦提交，不可修改",
+      title:"是否确认打包所有的快递包裹",
+      content:"确认后，订单进入捡货状态，快递包裹将会进行打包称重，是否要继续？",
       success(){
-        wx.switchTab({
-          url:`/pages/orderdelist/orderdelist`,
-        })
+        // 设置状态为待拣货
+        console.log("设置状态为待拣货");
       }
     })
   },

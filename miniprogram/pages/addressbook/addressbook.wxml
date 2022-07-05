@@ -1,0 +1,58 @@
+<view class="addresscontent">
+<view class="foreign">
+    <view class="target">目标国收件信息</view>
+    <view class="select">
+      <text class="en">请用英文填写</text>
+      <!-- <text class="ads" catchtap="select">选择地址</text> -->
+      <van-icon name="warning-o"  class="icon"/>
+    </view>
+    <view class="gather">
+        <van-cell-group>
+           <view class="child">
+            <view class="title">Name：</view> 
+            <van-field  value="{{ Name }}" placeholder="Please fill in the recipient‘s name" error-message="{{tipName}}" bindinput="nametip"/>
+           </view>
+           <view class="child">
+            <view class="title">Phone：</view> 
+            <van-field  value="{{ phone }}" placeholder="Please fill in the recipient‘s phone" error-message="{{tipphone}}"
+            bindblur="phonetip"/>
+           </view>
+           <view class="child">
+            <view class="title">Address：</view> 
+            <van-field  value="{{ Address }}" placeholder="Please fill in the address" error-message="{{tipAddress}}"
+            bindinput="Address"/>
+           </view>
+           <view class="child">
+            <view class="title">City：</view> 
+            <van-field  value="{{ City }}" placeholder="Please fill in the city" error-message="{{tipCity}}"
+            bindinput="City"/>
+           </view>
+           <view class="child">
+            <view class="title">PostCode：</view> 
+            <van-field  value="{{ PostCode }}" placeholder="Please fill in the postcode" error-message="{{tipPostCode}}"
+            bindinput="PostCode"/>
+           </view>
+           <view class="child select">
+            <view class="title">Country</view>
+            <view class="son flexend" catchtap="showPopup">Please select a country  > </view>
+           </view>
+        </van-cell-group>
+    </view>
+</view>
+
+<!-- 默认地址 -->
+<view class="default">
+      <view>设为默认</view>
+      <view><van-switch checked="{{ checked }}" bind:change="onChange" size="48rpx"/></view>
+  </view>
+
+    <view class="submit">
+      <view class="submit-ti" catchtap="submit">确认添加</view>
+    </view>
+</view>
+
+<!-- 国家弹窗内容 -->
+
+<van-popup show="{{ show }}" round  position="bottom" custom-style="height: 60%" bind:close="onClose">
+  <van-area area-list="{{ areaList }}" columns-num="{{ 2 }}" title="标题" />
+</van-popup>

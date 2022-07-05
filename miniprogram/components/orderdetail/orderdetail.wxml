@@ -70,7 +70,7 @@
   <!-- 底部按钮 -->
   <view class="bot">
     <button class="br1" open-type="contact">联系客服</button>
-    <button class="br2" catchtap="submit">提交订单</button>
+    <button class="br2" catchtap="submit">确认打包</button>
   </view>
 </view>
 

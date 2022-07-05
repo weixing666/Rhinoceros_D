@@ -9,8 +9,8 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/informed/informed",
-          "query": "",
+          "pathName": "pages/myaddress/myaddress",
+          "query": "Name=&phone=%0A%20%20%20%20&Address=&City=&PostCode=",
           "launchMode": "default",
           "scene": null
         },
