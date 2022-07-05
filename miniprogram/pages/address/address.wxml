@@ -1,4 +1,48 @@
-<van-button type="default">默认按钮</van-button>
-<van-button type="primary">主要按钮</van-button>
-<van-button type="info">信息按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
+<view class="addresscontent">
+  <view class="warehouse">
+    <view class="addre_icon son">
+      <view class="title"><van-icon name="location-o" class="icon"/>仓库地址</view>
+    </view>
+    <view class="iphone son">
+      <text class="iphone_item1">犀牛仓库</text>
+      <text class="iphone_item2">13723685482</text>
+      <text class="iphone_item3">复制</text>
+    </view>
+    <view class="detailed son">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+  </view>
+
+  <view class="foreign">
+      <view class="target">目标国收件信息</view>
+      <view class="select">
+        <text class="en">请用英文填写</text>
+        <text class="ads">选择地址</text>
+        <van-icon name="warning-o"  class="icon"/>
+      </view>
+      <view class="gather">
+          <view class="import">
+            <view><text>Name：</text></view>
+            <input type="text" placeholder="Please fill in the recipient‘s name"/>
+          </view>
+          <view class="import">
+            <view><text>Phone：</text></view>
+            <input type="text" placeholder="Please fill in the recipient‘s phone"/>
+          </view>
+          <view class="import">
+            <view><text>Address：</text></view>
+            <input type="text" placeholder="Please fill in the address"/>
+          </view>
+          <view class="import">
+            <view><text>City：</text></view>
+            <input type="text" placeholder="Please fill in the city"/>
+          </view>
+          <view class="import">
+            <view><text>PostCode：</text></view>
+            <input type="text" placeholder="Please fill in the postcode"/>
+          </view>
+      </view>
+  </view>
+
+      <view class="submit">
+        <view class="submit-ti" catchtap="submit">立即提交</view>
+      </view>
+</view>

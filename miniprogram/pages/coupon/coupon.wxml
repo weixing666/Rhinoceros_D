@@ -1,2 +1,5 @@
-<!--pages/coupon/coupon.wxml-->
-<text>pages/coupon/coupon.wxml</text>
+<view class="img">
+  <image src="../../assets/smoicon/19.png"></image>
+  <image src="../../assets/smoicon/20.png"></image>
+  <image src="../../assets/smoicon/21.png"></image>
+</view>

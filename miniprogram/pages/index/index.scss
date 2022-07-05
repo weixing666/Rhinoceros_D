@@ -58,6 +58,10 @@ page {
   color: white;
   margin: 64rpx auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13rpx;
 }
 .country .t-con .item_2 image{
   width: 92rpx;
@@ -204,4 +208,10 @@ page {
   padding: 10rpx;
   width: 400rpx;
   margin: 0 auto;
+}
+
+.popup{
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 30rpx;
 }

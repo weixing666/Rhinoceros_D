@@ -1,0 +1,24 @@
+<view class="estimated">
+  <image src="../../assets/smoicon/12.png" class="img"></image>
+</view>
+
+<view class="cost">
+  <view class="child">预估运费</view>
+  <view class="child">
+    <view class="weight">
+      <view>转运渠道</view>
+      <view>普通货物</view>
+</view>
+    <view class="weight">
+      <view>预估重量</view>
+      <view>请输入重量</view>
+    </view>
+  </view>
+  <view class="child">
+      <view>预估体积</view>
+      <view>请输入长宽高</view>
+  </view>
+  <view class="child">
+    <view>预估运费（实际结果以订单为准）¥ 0.00</view>
+  </view>
+</view>

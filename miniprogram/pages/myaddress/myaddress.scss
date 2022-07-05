@@ -1,0 +1,17 @@
+.img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .van-button{
+    width: 300rpx;
+  }
+  .van-icon{
+    font-size: 150rpx;
+    color: #1989faa1;
+    position: absolute;
+    top: 200rpx;
+    left: 350rpx;
+  }
+}

@@ -1,0 +1,5 @@
+<view class="img">
+  <image src="../../assets/smoicon/18.png"></image>
+  <van-button round type="info">添加地址</van-button>
+  <van-icon name="newspaper-o" />
+</view>

@@ -1,5 +1,5 @@
 {
-  "projectname": "app",
+  "projectname": "Rhinoceros",
   "setting": {
     "compileHotReLoad": true
   },
@@ -9,7 +9,14 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/address/address",
+          "pathName": "pages/informed/informed",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/countries/countries",
           "query": "",
           "launchMode": "default",
           "scene": null

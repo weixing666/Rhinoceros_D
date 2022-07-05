@@ -1,2 +1,47 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="user">
+  <view class="child">
+    <image src="../../assets/smoicon/13.png" class="img"></image>
+    <view>
+      <view>KK</view>
+      <view>编码：HBK</view>
+    </view>
+  </view>
+  <view class="child"></view>
+</view>
+
+<view class="cell">
+  <view class="child">
+    <view>我的订单</view>
+    <navigator class="order" url="pages/orderdelist/orderdelist" open-type="navigate">全部订单 ></navigator>
+  </view>
+  <view class="child">
+      <view class="child_p">
+        <image src="../../assets/smoicon/15.png"></image>
+        <view>待付款</view>
+      </view>
+      <view class="child_p">
+        <image src="../../assets/smoicon/15.png"></image>
+        <view>待付款</view>
+      </view>
+      <view class="child_p">
+        <image src="../../assets/smoicon/15.png"></image>
+        <view>待付款</view>
+      </view>
+      <view class="child_p">
+        <image src="../../assets/smoicon/15.png"></image>
+        <view>待付款</view>
+      </view>
+  </view>
+</view>
+
+<view class="other">
+  <van-cell-group inset>
+    <van-cell is-link title="我的地址" link-type="navigateTo" url="/pages/myaddress/myaddress"/>
+    <van-cell is-link title="我的优惠券" link-type="navigateTo" url="/pages/mycircle/mycircle"/>
+    <van-cell is-link title="活动中心" link-type="navigateTo" url="/pages/activity/activity"/>
+    <van-cell is-link title="练习客服" link-type="navigateTo" url="/pages/service/service"/>
+    <van-cell is-link title="转运流程" link-type="navigateTo" url="/pages/flow/flow"/>
+    <van-cell is-link title="转运须知" link-type="navigateTo" url="/pages/informed/informed"/>
+    <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/aboutme/aboutme"/>
+  </van-cell-group>
+</view>

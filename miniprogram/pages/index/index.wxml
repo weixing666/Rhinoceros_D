@@ -14,9 +14,15 @@
       <view class="t-con">
         <view>中国</view>
         <view class="item_2"><image src="../../assets/smoicon/feji.png" mode="aspectFit"></image></view>
-        <view>美国</view>
+        <view catchtap="selectional">美国</view>
       </view>
-      <button class="b-con">立即转运</button>
+      <view class="b-con" catchtap="showPopup">立即转运</view>
+      <van-popup show="{{ show }}" bind:close="onClose">
+        <!-- 弹窗内容 -->
+          <view class="popup">
+            <van-picker id="van-toast" columns="{{ columns }}" bind:change="onChange" show-toolbar title="预选渠道"  bind:cancel="onCancel" bind:confirm="onConfirm"/>
+          </view>
+      </van-popup>
   </view>
   <view class="service">
     <view class="relation">
@@ -33,13 +39,13 @@
     </view>
   </view>
 <view class="carriage">
-  <view class="l-content carriage_con">
+  <view class="l-content carriage_con" catchtap="goinformed">
     <view class="carriage_iten1">转运须知</view>
     <view class="carriage_iten2">流程和注意事项</view>
     <image class="carriage_iten3" src="../../assets/smoicon/5.png"></image>
     <image class="carriage_iten4" src="../../assets/smoicon/6.png"></image>
   </view>
-  <view class="r-content carriage_con">
+  <view class="r-content carriage_con" catchtap="estimated">
     <view class="carriage_iten1">运费估算</view>
     <view class="carriage_iten2">费用心中有数</view>
     <image class="carriage_iten3" src="../../assets/smoicon/5.png"></image>
@@ -51,8 +57,10 @@
   <image class="carriage_img" src="../../assets/smoicon/9.png"></image>
 </view>
 <view class="foot">
-  <button>复制仓库地址去购物</button>
+  <button catchtap="gocopy">复制仓库地址去购物</button>
   <view>电商平台的收货地址请填写我们</view>
 </view>
+
 </view>
 
+<van-toast id="van-toast"/>

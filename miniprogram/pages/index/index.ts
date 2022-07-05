@@ -1,24 +1,55 @@
-// index.ts
-// 获取应用实例
-const app = getApp<IAppOption>()
 
+const app = getApp<IAppOption>()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    show: false,//弹窗
+    columns: ['普通货物', '电子产品', '液体粉末', '内地EMS', '广东EMS'],
   },
-  // 事件处理函数
-  bindViewTap() {
+
+  // 展示弹窗
+  showPopup() {
+    this.setData({ show: true });
+  },
+  // 关闭弹窗
+  onClose() {
+    this.setData({ show: false });
+  },
+  // 确认
+  onConfirm(event:any) {
+    const {  value } = event.detail;
     wx.navigateTo({
-      url: '../logs/logs',
+      url:`/pages/address/address?id=${value}`
+    })
+  },
+  // 取消
+  onCancel() {
+    this.setData({ show: false });
+  },
+  // 选择国家
+  selectional(){
+    wx.navigateTo({
+      url:`/pages/countries/countries`
+    })
+  },
+  // go知悉
+  goinformed(){
+    wx.navigateTo({
+      url:`/pages/informed/informed`
+    })
+  },
+  // go 运费估算
+  estimated(){
+    wx.navigateTo({
+      url:`/pages/estimated/estimated`
+    })
+  },
+  // gocopy 复制仓库地址\
+  gocopy(){
+    wx.navigateTo({
+      url:`/pages/copyaddress/copyaddress`
     })
   },
   onLoad() {
-    // @ts-ignore
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true

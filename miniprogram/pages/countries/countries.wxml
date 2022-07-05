@@ -1,0 +1,11 @@
+<view class="content">
+  <van-search value="{{ value }}" placeholder="请选择国家和地区" />
+</view>
+  <van-index-bar>
+  <view wx:for="{{sort}}">
+    <van-index-anchor index="{{item}}" wx:key="{{item}}"/>
+    <van-cell title="中国" />
+    <van-cell title="中国" />
+    <van-cell title="中国" />
+  </view>
+</van-index-bar>

@@ -1,0 +1,126 @@
+<van-tabs active="{{ active }}" bind:change="onChange" color="#71c7ff" sticky="true">
+  <van-tab title="全部">
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+      <view class="box">
+         <view class="son">
+          <text>订单号：20220509140712345678</text>
+          <text>复制</text>
+         </view>
+         <view class="son">
+            <view>中国</view>
+            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+              <view class="state">待入仓</view>
+            </view>
+            <view>米国</view>
+         </view>
+         <view class="son">
+          <view class="btn1 btn">确认打包</view>
+          <view class="btn2 btn">详情</view>
+         </view>
+      </view>
+  </van-tab>
+  <van-tab title="待支付">待支付</van-tab>
+  <van-tab title="已支付">已支付</van-tab>
+  <van-tab title="已完成">已完成</van-tab>
+</van-tabs>

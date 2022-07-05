@@ -1,19 +1,47 @@
 { 
   "usingComponents": {
-    "van-button": "@vant/weapp/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index", 
+    "van-field": "@vant/weapp/field/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index"
   },
   "pages": [
     "pages/my/my",
     "pages/index/index",
     "pages/coupon/coupon",
     "pages/order/order",
-    "pages/address/address"
+    "pages/address/address",
+    "pages/countries/countries",
+    "pages/informed/informed",
+    "pages/orderdetail/orderdetail",
+    "pages/orderdelist/orderdelist",
+    "pages/copyaddress/copyaddress",
+    "pages/estimated/estimated",
+    "pages/myaddress/myaddress",
+    "pages/mycircle/mycircle",
+    "pages/aboutme/aboutme",
+    "pages/service/service",
+    "pages/flow/flow",
+    "pages/activity/activity"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor":"#1296db",
@@ -40,7 +68,7 @@
       "selectedIconPath": "/assets/nav/my-activate.png"
     },
     {
-      "pagePath": "pages/order/order",
+      "pagePath": "pages/orderdelist/orderdelist",
       "text": "我的订单",
       "iconPath": "/assets/nav/order-inactivation.png",
       "selectedIconPath": "/assets/nav/order-activate.png"

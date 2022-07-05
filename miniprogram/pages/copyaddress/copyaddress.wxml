@@ -1,0 +1,19 @@
+<view class="address">
+   <view class="son">
+    <view><van-icon name="location-o" class="loca"/></view>
+    <view class="title">仓库地址</view>
+   </view>
+   <view class="son">收件人：河马仓库</view>
+   <view class="son">
+      <view class="child_t">收货地址：</view>
+      <view class="child_b">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+   </view>
+   <view class="son">联系电话：18688880130</view>
+   <view class="son">邮政编码：518000</view>
+</view>
+<view class="bth">
+  <van-button round type="info" block catchtap="copy">一键复制仓库地址信息</van-button>
+</view>
+<view class="img">
+  <image src="../../assets/smoicon/11.png"></image>
+</view>

@@ -1,1 +1,122 @@
-/* pages/address/address.wxss */
+.addresscontent{
+  padding: 5rpx;
+}
+.addresscontent .warehouse{
+  border-radius: 6rpx;
+  box-shadow: 0px 4rpx 20rpx 0px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 100);
+  width: 694rpx;
+  height: 270rpx;
+  margin: 0 auto;
+  margin-top: 70rpx;
+  padding: 30rpx 0 0 80rpx;
+  box-sizing: border-box;
+}
+.addresscontent .addre_icon .title .icon{
+  font-size: 40rpx;
+  color: #1296db;
+  margin-right: 20rpx;
+}
+.addresscontent .addre_icon .title{
+  color: rgba(16, 16, 16, 100);
+  font-size: 35rpx;
+  font-weight:700
+}
+.addresscontent .warehouse .iphone{
+  font-size: 30rpx;
+}
+.addresscontent .warehouse .iphone .iphone_item1{
+  font-size: 35rpx;
+  color: rgba(16, 16, 16, 100);
+  font-family: PingFangSC-regular;
+}
+
+.addresscontent .warehouse .iphone .iphone_item3{
+  background-color: rgba(217, 241, 221, 100);
+  color: rgba(64, 184, 80, 100);
+  font-size: 24rpx;
+  margin-left: 5rpx;
+}
+.addresscontent .warehouse .detailed{
+  color: rgba(153, 153, 153, 100);
+  font-size: 28rpx;
+  font-family: PingFangSC-regular;
+}
+.addresscontent .warehouse .son{
+  margin: 20rpx 0;
+}
+
+.addresscontent{
+  .foreign{
+    margin: 0 auto;
+    margin-top: 50rpx;
+    font-size: 28rpx;
+    width: 694rpx;
+    height: 740rpx;
+    box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(0, 0, 0, 0.4);
+    border-radius: 6rpx;
+    border: 1px solid rgba(255, 255, 255, 100);
+  }
+  .target{
+    font-size: 35rpx;
+    font-weight: 700;
+    padding: 60rpx 0 0 80rpx;
+  }
+  .select{
+    margin-top: 15rpx;
+    position: relative;
+    .en{
+      color: #e8691d;
+      padding: 15rpx 0 0 120rpx;
+    }
+    .ads{
+      margin-left:250rpx;
+      width: 150rpx;
+      height: 100rpx;
+      padding: 5rpx;
+      border-radius: 8rpx;
+      background-color: rgba(217, 241, 221, 100);
+      color: rgba(64, 184, 80, 100);
+      font-size: 24rpx;
+      text-align: center;
+      border: 1px solid rgba(64, 184, 80, 100);
+    }
+    .icon{
+      left:80rpx;
+      top: 5rpx;
+      color: #e8691d;
+      position: absolute;
+    }
+   
+  }
+  .gather{
+    padding: 50rpx 0;
+    .import{
+      display: flex;
+      align-items: center;
+      padding-left: 50rpx;
+      margin: 20rpx 0;
+      text{
+        float:left;
+      }
+      input{
+        width: 434rpx;
+      }
+    }
+  }
+  .submit{
+    padding: 100rpx 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .submit-ti{
+      text-align: center;
+      width: 324rpx;
+      height: 76rpx;
+      border-radius: 8rpx;
+      background-color: #4c168e;
+      line-height: 76rpx;
+      color: white;
+    }
+  }
+}
