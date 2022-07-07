@@ -5,20 +5,32 @@
 <view class="cost">
   <view class="child">预估运费</view>
   <view class="child">
+    <view class="weight" catchtap="showPopup">
+      <view class="title">转运渠道</view>
+      <view class="con">{{columnsvalue}}</view>
+      <view class="channelP">其他渠道>></view>
+  </view>
+
     <view class="weight">
-      <view>转运渠道</view>
-      <view>普通货物</view>
-</view>
-    <view class="weight">
-      <view>预估重量</view>
-      <view>请输入重量</view>
+      <view class="tltle">预估重量/默认单位kg</view>
+      <!-- <in>请输入重量</view> -->
+      <input type="text" placeholder="请输入重量" class="field" bindinput="getweight"/>
     </view>
   </view>
   <view class="child">
-      <view>预估体积</view>
-      <view>请输入长宽高</view>
+      <view class="title">预估体积/默认带单位cm</view>
+      <view class="size"><input type="text" placeholder="请输长宽高数值, 英文,隔开" class="huoqu" bindinput="getsize"/></view>
   </view>
   <view class="child">
-    <view>预估运费（实际结果以订单为准）¥ 0.00</view>
+    <van-button round type="info" class="time" catchtap="forecast">确认预估</van-button>
+    <view>（实际结果以订单为准）¥ {{estiprice}} 元 </view>
   </view>
 </view>
+
+<!-- 转运弹出 -->
+<van-popup show="{{ show }}" bind:close="onClose" round  custom-style="height:40%;width:80%">
+        <!-- 弹窗内容 -->
+          <view class="popup">
+            <van-picker id="van-toast" columns="{{ columns }}" bind:change="onChange" show-toolbar title="预选渠道"  bind:cancel="onCancel" bind:confirm="onConfirm"/>
+          </view>
+</van-popup>

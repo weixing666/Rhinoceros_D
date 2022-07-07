@@ -82,7 +82,7 @@ Page({
     let istrue = reg.test(e.detail)
     if(!istrue){
       this.setData({
-        tipPostCode:"需填写6位由字母开头丶数字英文组成的邮编"
+        tipPostCode:"需填写6位数字组成的邮编"
       })
     }else{
       this.setData({
@@ -123,14 +123,14 @@ Page({
     return
    }else if(!istruePostCode){
     this.setData({
-      tipPostCode:"需填写6位由字母开头丶数字英文组成的邮编"
+      tipPostCode:"需填写6位由数字组成的邮编"
     })
     return
    }else{
     //  验证完毕需要提交到数据库
      wx.navigateTo({
        url:`/pages/informed/informed?Name=${this.data.Name}&phone=${this.data.phone}
-       &Address=${this.data.Address}&City=${this.data.City}&PostCode=${this.data.PostCode}`
+       &Address=${this.data.Address}&City=${this.data.City}&PostCode=${this.data.PostCode}&hide=false`
      })
    }
   },

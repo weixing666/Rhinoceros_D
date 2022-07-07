@@ -34,7 +34,7 @@ Page({
   // go知悉
   goinformed(){
     wx.navigateTo({
-      url:`/pages/informed/informed`
+      url:`/pages/informed/informed?isshow=true`
     })
   },
   // go 运费估算

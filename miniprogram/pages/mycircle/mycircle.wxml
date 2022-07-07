@@ -1,2 +1,83 @@
-<!--pages/mycircle/mycircle.wxml-->
-<text>pages/mycircle/mycircle.wxml</text>
+<!-- 新发布 -->
+<view class="mycli" catchtap="godetail">
+    <view class="child">
+      <image src="../../assets/smoicon/22.png" class="left"></image>
+      <view class="text">
+        <view class="money">15<text class="Unit">元</text></view>
+        <view class="threshold">满100元使用</view>
+      </view>
+    </view>
+    <view class="child">
+      <view class="tltie">新品优惠券</view>
+      <view class="time">2020.10.10 - 2020.11.11</view>
+      <view class="labels">
+           <view class="text">抵扣券</view>
+           <image src="../../assets/smoicon/22-2.png"></image>
+      </view>
+    </view>
+</view>
+
+<!-- 已使用 -->
+<view class="mycli" catchtap="godetail">
+    <view class="child">
+      <image src="../../assets/smoicon/23.png" class="left"></image>
+      <view class="text">
+        <view class="money">15<text class="Unit">元</text></view>
+        <view class="threshold">满100元使用</view>
+      </view>
+    </view>
+    <view class="child">
+      <view class="tltie">新品优惠券</view>
+      <view class="time">2020.10.10 - 2020.11.11</view>
+      <!-- 是否过期 -->
+      <view class="past">
+          <image src="../../assets/smoicon/23-3.png"></image>
+      </view>
+      <view class="labels">
+           <view class="text">抵扣券</view>
+           <image src="../../assets/smoicon/23-2.png"></image>
+      </view>
+    </view>
+</view>
+
+<!-- 未使用,但过期 -->
+<view class="mycli" catchtap="godetail">
+    <view class="child">
+      <image src="../../assets/smoicon/24.png" class="left"></image>
+      <view class="text">
+        <view class="money">15<text class="Unit">元</text></view>
+        <view class="threshold">满100元使用</view>
+      </view>
+    </view>
+    <view class="child">
+      <view class="tltie">新品优惠券</view>
+      <view class="time">2020.10.10 - 2020.11.11</view>
+      <!-- 是否过期 -->
+      <view class="past">
+          <image src="../../assets/smoicon/24-3.png"></image>
+      </view>
+      <view class="labels">
+           <view class="text">抵扣券</view>
+           <image src="../../assets/smoicon/24-2.png"></image>
+      </view>
+    </view>
+</view> 
+
+
+<view class="btn">
+  <van-button round type="info" catchtap="showPopup">兑换优惠券</van-button>
+</view>
+
+<!-- 弹出层 -->
+<van-dialog
+  use-slot
+  title="兑换优惠卷"
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+  bind:confirm=""
+>
+  <view class="code"><input type="text" placeholder="请输入优惠卷code，进行兑换" value="{{code}}" bindinput="getcode"/></view>
+</van-dialog>

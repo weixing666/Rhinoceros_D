@@ -1,0 +1,86 @@
+<view class="orderinput">
+  <view class="child">
+    <text>订单号：</text>
+    <text>20220509140712345678</text>
+  </view>
+  <view class="child">
+    <view><image src="../../assets/smoicon/26.png" class="img"></image></view>
+    <view>保价</view>
+  </view>
+  <view class="child">
+    <input type="text" placeholder="自定义物品价格，请填写真实物品价格" class="input"/>
+  </view>
+</view>
+
+<view class="specification">
+  <view class="child">
+    <view class="icon">
+       <van-icon name="warning-o" />
+    </view>
+    <view class="text">
+        国际快递由于多国调度，存在一定比例丢失的情况！
+        如丢失包裹，购买丢失险可获得全额赔付赔付(最高5000元)!
+    </view>
+  </view>
+  
+  <view class="child">
+    <view>丢失（保价的3%)</view>
+    <view><van-switch checked="{{ checked }}" bind:change="onChange" size="38rpx"/></view>
+  </view>
+  <view class="child">
+    <view>保险费：¥ 30.00</view>
+  </view>
+</view>
+
+<!-- 关税险 -->
+<view class="specification">
+  <view class="child">
+    <view class="icon">
+       <van-icon name="warning-o" />
+    </view>
+    <view class="text">
+            电子产品等容易被税的高客单价产品建议购买关税保险!
+            英国关税起征点为0.01英镑!
+            综合关税=货值x增值税率+(货值+运费+货值x产品税
+            率)x20%+清关杂费。
+    </view>
+  </view>
+  
+  <view class="child">
+    <view>关税险（保价的2%）</view>
+    <view><van-switch checked="{{ checked }}" bind:change="onChange" size="38rpx"/></view>
+  </view>
+  <view class="child">
+    <view>保险费：¥ 20.00</view>
+  </view>
+</view>
+
+<view class="bot">
+    <button class="br1" open-type="contact">联系客服</button>
+    <button class="br2" catchtap="confirm">下一步</button>
+  </view>
+
+  
+<!-- 保价选项弹窗 -->
+<van-dialog
+  use-slot
+  title="风险告知书"
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+  confirmButtonText="购买保险"
+  cancelButtonText="承担风险"
+  bind:confirm="yespay"
+  bind:cancel="nopay"
+>
+  <view class="confirmadres">
+  <view class="tltle">尊敬的客户:</view>
+        <view class="content">
+          您好，系统识别到您的订单未投保丢失保险，
+          丢件的概率为万分之三，未购买丢失保险发生丢
+          失的赔付原则为:退运费，按照实际货值赔付但不
+          超过运费价值且最高不超过100美元。请悉知。
+        </view>
+  </view>
+</van-dialog>

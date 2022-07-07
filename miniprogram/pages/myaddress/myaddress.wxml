@@ -51,3 +51,7 @@
       <van-icon name="delete-o" class="iocn "/>
   </view>
 </view>
+
+<view class="addaddress">
+  <van-button round type="info" size="small" catchtap="address">添加地址</van-button>
+</view>

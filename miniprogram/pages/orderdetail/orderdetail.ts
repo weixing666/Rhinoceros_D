@@ -1,106 +1,81 @@
-// pages/orderdetail/orderdetail.ts
 Page({
+      data: {
+          number:'',
+          isdisabled:false,
+          showvalue:[],
+      },
+      onLoad() {
+      },
+  
+      //当快递单号个数输入框失去焦点时候
+      changenum(e:any){
+          if(!e.detail.value){
+              return
+          }
+          //限制渲染长度
+          if(e.detail.value >10){
+              e.detail.value = 10
+          }
+          // 修改一下number的值
+         this.setData({number:Number(e.detail.value),isdisabled:true})
+          //判断,只要文本框输入的值不为假值就执行
+          if(Number(e.detail.value)){
+              let arr =[]
+              for(let i = 0; i<e.detail.value; i++){
+                  // 循环一个跟我们输入的value值长度相等的数组
+                  arr[i] = i
+              }
+              // 加工成我们想要的对象类型类型
+             let arr2 = arr.map((item:any,index)=>{
+                  return{
+                      id:index,
+                      num:item
+                  }
+              })
+              // 修改一下showvalue的值,方便我们点击删除图标的时候判断
+              this.setData({showvalue:arr2})
+          } 
+      },
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    quantity:0,//要循环的单号合数
-    numbertip:"", //提示单号需要数字类型
-  },
-  // 提示输入快递个数
-  numberTip(e:any){
-    let reg = /[1-9]{1,}/
-    let istrue = reg.test(e.detail)
-    if(!istrue){
-      this.setData({
-        numbertip:"请输入数字"
-      })
-    }else{
-      this.setData({
-        numbertip:"",
-        quantity:parseInt(e.detail)
-      })
-    }
-  },
-  // 添加单号
-  addorder(){
-    let _this = this
-    wx.showModal({
-      title:"是否增加快递单号",
-      content:"增加快递单号后，发往转运中心的快递个数+1。是否要继续？",
-      success(){
-        _this.setData({
-          quantity:parseInt(_this.data.quantity + 1)
-        })
-      }
-    })
-  },
-  // 删除单号
-  deorder(){
-    this.setData({
-      quantity:parseInt(this.data.quantity - 1)
-    })
-  },
-  // 提交订单
-  submit(){
-    wx.showModal({
-      title:"是否提交单号",
-      content:"请确认快递单号是否无误,一旦提交，不可修改",
-      success(){
+       //点击删除图标时候
+      delete(data:any){
+          let _this = this //保留一下this
+         wx.showModal({
+             title:"确认删除吗",
+             success(res){
+                 if(res.confirm){
+                     //拿到我们页面通过data-index 传过来的 item.id
+                      let id = data.currentTarget.dataset.index
+                     let newvalue = _this.data.showvalue.filter((item:any)=>{
+                      //过滤showvalue中id等于我们穿过来的id的属性
+                          return item.id !== id 
+                      })
+                      // 再次修改showvalue的值
+                      _this.setData({showvalue:newvalue})
+                 }
+             }
+         })
+      },
+      // 点击添加单号的时候
+      addorder(){
+          let _this = this //保留一下this
+         wx.showModal({
+             title:"确认添加吗",
+             success(res){
+                 if(res.confirm){
+                 }
+             }
+         })
+      },
+      // 输入具体订单号
+      getorder(e:any){
+      },
+      // 提交订单
+      submit(){
         wx.switchTab({
-          url:`/pages/orderdelist/orderdelist`,
+          url:`/pages/orderdelist/orderdelist`
         })
-      }
-    })
-  },
-  onLoad() {
-
-  },
-
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+      },
 })
+  
+    

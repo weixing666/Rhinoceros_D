@@ -80,3 +80,16 @@
     font-size: 28rpx;
  }
 }
+
+.addaddress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .van-button{
+    width: 200rpx;
+    position: fixed;
+    bottom: 120rpx;
+    left: 270rpx;
+  }
+}

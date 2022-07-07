@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "Couriernumber":"/components/Couriernumber/Couriernumber"
+    "printpreview":"/components/printpreview/printpreview"
   }
   
 }

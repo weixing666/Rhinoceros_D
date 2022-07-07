@@ -1,0 +1,117 @@
+// 填写保价订单号
+.orderinput{
+  background-color: rgba(255, 255, 255, 79);
+  font-size: 28rpx;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+  margin: 20rpx auto;
+  width: 694rpx;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  height: 296rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  box-sizing: border-box;
+  .child{
+    flex: 0.3;
+    margin: 10rpx;
+  }
+  .img{
+    width: 52rpx;
+    height: 52rpx;
+    margin-right: 15rpx;;
+  }
+  .child:nth-child(2){
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+  .child:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .input{
+      width: 568rpx;
+      height: 68rpx;
+      border: 1px solid rgba(187, 187, 187, 100);
+      font-size: 28rpx;
+      color: rgba(136, 136, 136, 100);
+      padding: 0 10rpx;
+      box-sizing: border-box;
+      border-radius: 22rpx;
+    }
+    
+  }
+}
+
+// 保价费
+.specification{
+  background-color: rgba(255, 255, 255, 79);
+  font-size: 28rpx;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+  width: 694rpx;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  height: 296rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 30rpx auto;
+  .child{
+    flex: 0.3;
+  }
+  .child:nth-child(1){
+    color: #ec0606;
+    font-size: 25rpx;
+    display: flex;
+    .icon{
+      margin-right: 10rpx;;
+    }
+  }
+  .child:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin: 20rpx 10rpx;
+  }
+  .child:nth-child(3){
+    padding: 13rpx;
+    border-top: 4rpx solid#bbbbbb;
+  }
+}
+
+
+ .bot{
+  height: 114rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+
+  view,button{
+    border-radius: 0;
+    text-align: center;
+    width: 376rpx;
+    height: 114rpx;
+    line-height: 114rpx;
+    color: white;
+  }
+  .br1{
+    // flex: 0.5;
+    background-color: #1296db;
+
+  }
+  .br2{
+    // flex: 0.5;
+    background-color:#6dcf2bbb
+  }
+}
+
+.confirmadres{
+  padding: 30rpx;
+  .content{
+    margin-top: 10rpx;
+    text-indent: 2em;
+    font-size: 30rpx;
+    color: #6b6b6b;
+  }
+}

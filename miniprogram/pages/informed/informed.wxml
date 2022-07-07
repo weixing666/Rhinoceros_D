@@ -46,9 +46,12 @@
                                   
 </view>
    <view class="zhixu">
-    <van-checkbox value="{{ checked }}" bind:change="onChange" wx:if="{{!isshow}}">勾选代表我同意以上协议</van-checkbox>
-    <view class="con" catchtap="iknow" wx:if="{{!isshow}}">确定</view>
-    <view class="read"><van-button type="primary" size="small" catchtap="iknoway">已阅读</van-button></view>
+    <!-- <view class="con" catchtap="iknow" wx:if="{{!isshow}}">已知须</view> -->
    </view>
   </view>
 </view>
+
+<view class="boxbtn">
+  <van-button round type="info" catchtap="iknowaytes" disabled="{{isdisabled}}">{{time}}{{text}}</van-button>
+</view>
+

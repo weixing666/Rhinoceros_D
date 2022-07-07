@@ -1,0 +1,180 @@
+<view class="title">
+  转运账单已生成，请及时查看账单信息并支付
+</view>
+
+<!-- 仓库地址 -->
+<view class="content">
+    <view class="child">
+      <view class="son">
+          <view class="iconone"><van-icon name="location-o"/></view>
+      </view>
+      <view class="son">
+        <view class="zison">
+          <view>新希望仓库</view>
+          <view>18688880130</view>
+          <view>复制</view>
+        </view>
+        <view class="zison">
+          <view>深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+        </view>
+      </view>
+    </view>
+    <view class="child">
+      <view class="son">
+          <view class="iconone"><van-icon name="newspaper-o" /></view>
+      </view>
+      <view class="son">
+        <view class="zison">
+          <view>KK Chen</view>
+          <view>18688880130</view>
+          <!-- <view>复制</view> -->
+        </view>
+        <view class="zison">
+          <view>MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+        </view>
+      </view>
+    </view>
+</view>
+
+<!-- 打包拍照 -->
+<view class="printpreview">
+    <view class="bos"><text class="titleall">运费：</text>¥ 138.00</view>
+    <view class="bos"><text class="titleall">附加费：</text>¥ 0.00</view>
+    <view class="bos"><text class="titleall">称重重量：</text>5.6 kg</view>
+    <view class="bos"><text class="titleall">分拣备注：</text><text class="colo">已拆封分拣，统一归类</text></view>
+    <view class="bos"><text class="titleall">打包备注：</text><text class="colo">东西太多，已统一打包加固</text></view>
+    <view class="bos"><text class="titleall">称重图片：</text></view>
+    <view class="weighimg bos">
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+    </view>
+    <view class="bos titleall">账单：</view>
+    <view class="detail bos">
+      <view class="child"><image class="img" src="../../assets/smoicon/25.png"></image></view>
+      <view class="child">
+        <view class="titleguo">包裹一</view>
+        <view  class="del">属性：普通货物</view>
+        <view  class="del">长宽高：12*5*5 CM</view>
+        <view  class="del">计费重量：1.25KG</view>
+        <view  class="del">计费方式：实际重量</view>
+        <view  class="del">运费：￥125G</view>
+      </view>
+    </view>
+    <view class="detail bos">
+      <view class="child"><image class="img" src="../../assets/smoicon/25.png"></image></view>
+      <view class="child">
+        <view class="titleguo">包裹一</view>
+        <view  class="del">属性：普通货物</view>
+        <view  class="del">长宽高：12*5*5 CM</view>
+        <view  class="del">计费重量：1.25KG</view>
+        <view  class="del">计费方式：实际重量</view>
+        <view  class="del">运费：￥125G</view>
+      </view>
+    </view>
+    <view class="detail bos">
+      <view class="child"><image class="img" src="../../assets/smoicon/25.png"></image></view>
+      <view class="child">
+        <view class="titleguo">包裹一</view>
+        <view  class="del">属性：普通货物</view>
+        <view  class="del">长宽高：12*5*5 CM</view>
+        <view  class="del">计费重量：1.25KG</view>
+        <view  class="del">计费方式：实际重量</view>
+        <view  class="del">运费：￥125G</view>
+      </view>
+    </view>
+</view>
+
+<!-- 快递单号详情 -->
+<view class="expressage">
+  <view class="orchild">
+    <view>快递个数*</view>
+    <view><input type="text" class="input" model:value="{{ number }}" disabled="ture"/></view>
+  </view>
+  <view class="orchild">
+    <textarea type="text" class="remark" placeholder="备注信息，例如：去掉包装盒等" disabled="ture" model:value="{{ beizhu }}"/>
+  </view>
+  <view class="oderzhaus">
+    <text>1.</text>
+    <input type="text" class="order" disabled="ture" model:value="{{ 15365575666651 }}"/>
+    <view class="orderstats">已入库</view>
+    <view class="orderweg">1.28kg</view>
+  </view>
+  <view class="oderzhaus">
+    <text>1.</text>
+    <input type="text" class="order" disabled="ture" model:value="{{ 15365575666651 }}"/>
+    <view class="orderstats">已入库</view>
+    <view class="orderweg">1.28kg</view>
+  </view>
+  <view class="oderzhaus">
+    <text>1.</text>
+    <input type="text" class="order" disabled="ture" model:value="{{ 15365575666651 }}"/>
+    <view class="orderstats">已入库</view>
+    <view class="orderweg">1.28kg</view>
+  </view>
+  <view class="oderzhaus">
+    <text>1.</text>
+    <input type="text" class="order" disabled="ture" model:value="{{ 15365575666651 }}"/>
+    <view class="orderstats">已入库</view>
+    <view class="orderweg">1.28kg</view>
+  </view>
+</view>
+
+
+<!-- 订单详情 -->
+<view class="ordercart">
+    <view class="clide">
+      <view>订单号：</view>
+      <view>20220509140712345678</view>
+      <view class="copy">复制</view>
+    </view>
+    <view class="clide">
+      <view>转运线路：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>预选渠道：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>订单状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>下单时间：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>订单状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+    <view class="clide">
+      <view>支付状态：</view>
+      <view>20220509140712345678</view>
+    </view>
+</view>
+
+<!-- 按钮 -->
+<view class="subbtn">
+  <button class="btn1" open-type="contact">联系客服</button>
+  <button class="btn2" catchtap="confirm">确认支付</button>
+</view>
+
+<!-- 支付选项弹窗 -->
+<van-dialog
+  use-slot
+  title="请确认您的收获地址"
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+  bind:confirm="gopayme"
+>
+  <view class="confirmadres">
+    <view class="child"><view class="icon"><van-icon name="hotel-o" /></view></view>
+    <view class="child">
+      <view><text class="name">KKChen</text><text>13428969654</text></view>
+      <view class="adress">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+    </view>
+  </view>
+</van-dialog>

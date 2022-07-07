@@ -12,24 +12,24 @@
 <view class="cell">
   <view class="child">
     <view>我的订单</view>
-    <navigator class="order" url="pages/orderdelist/orderdelist" open-type="navigate">全部订单 ></navigator>
+    <view class="order" catchtap="goorder">全部订单 ></view>
   </view>
   <view class="child">
-      <view class="child_p">
-        <image src="../../assets/smoicon/15.png"></image>
+      <view class="child_p" catchtap="obligation">
+        <image src="../../assets/smoicon/14.png"></image>
         <view>待付款</view>
       </view>
-      <view class="child_p">
+      <view class="child_p" catchtap="goawaitorder">
         <image src="../../assets/smoicon/15.png"></image>
-        <view>待付款</view>
+        <view>待发货</view>
       </view>
-      <view class="child_p">
-        <image src="../../assets/smoicon/15.png"></image>
-        <view>待付款</view>
+      <view class="child_p" catchtap="goawaitorder">
+        <image src="../../assets/smoicon/16.png"></image>
+        <view>待收货</view>
       </view>
-      <view class="child_p">
-        <image src="../../assets/smoicon/15.png"></image>
-        <view>待付款</view>
+      <view class="child_p" catchtap="gotoevaluate">
+        <image src="../../assets/smoicon/17.png"></image>
+        <view>待评价</view>
       </view>
   </view>
 </view>
@@ -41,7 +41,12 @@
     <van-cell is-link title="活动中心" link-type="navigateTo" url="/pages/activity/activity"/>
     <van-cell is-link title="练习客服" link-type="navigateTo" url="/pages/service/service"/>
     <van-cell is-link title="转运流程" link-type="navigateTo" url="/pages/flow/flow"/>
-    <van-cell is-link title="转运须知" link-type="navigateTo" catchtap="goinformed"/>
+    <van-cell is-link title="转运须知"  catchtap="goinformed"/>
     <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/aboutme/aboutme"/>
   </van-cell-group>
+</view>
+
+
+<view class="other2">
+
 </view>

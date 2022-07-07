@@ -1,1 +1,113 @@
-/* pages/mycircle/mycircle.wxss */
+.mycli{
+  height: 200rpx;
+  margin: 26rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, 100);
+  // background-color: aquamarine;
+  display: flex;
+  .child{
+    .left{
+      width: 268rpx;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      z-index: 0;
+    }
+    .text{
+      color: white;
+      position: absolute;
+      z-index: 1;
+      top: 5%;
+      left: 19%;
+      .money{
+        font-size: 92rpx;
+      }
+      .Unit{
+        font-size: 40rpx;
+      }
+      .threshold{
+        font-size: 28rpx;
+      }
+    }
+  }
+  .child:nth-child(1){
+    position: relative;
+    width: 268rpx;
+    border-top-left-radius: 20rpx;
+    border-bottom-left-radius: 20rpx;
+  }
+  .child:nth-child(2){
+    position: relative;
+    padding: 40rpx;
+    box-sizing: border-box;
+    flex: 1;
+    .time{
+      font-size: 28rpx;
+      color: rgba(191, 191, 191, 100);
+      margin-top: 20rpx;
+    }
+    .tltie{
+      font-size: 36rpx;
+      font-weight: 700;
+      color: rgb(105, 105, 105);
+    }
+    .labels{
+      position: absolute;
+      top: 0;
+      right: 0;
+      image{
+       position: relative;
+        width: 128rpx;
+        height: 128rpx;
+      }
+      .text{
+        position: absolute;
+        font-size: 26rpx;
+        top: 35rpx;
+        left:45rpx;
+        transform:translateY(30rpx);
+        transform:rotate(45deg);
+      }
+      
+    }
+    .past{
+      image{
+        width: 160rpx;
+        height: 160rpx;
+      }
+      position: absolute;
+      top: 15%;
+      right: 13%;
+    }
+  }
+}
+
+.btn{
+  .van-button{
+    width: 300rpx;
+    height: 75rpx;
+    position: fixed;
+    bottom: 60rpx;
+    left:218rpx;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx 50rpx 50rpx 50rpx;
+  input{
+    border: 1px solid rgba(187, 187, 187, 100);
+    border-radius: 18rpx;
+    width: 600rpx;
+    height: 60rpx;
+    padding: 0 20rpx;
+  }
+}

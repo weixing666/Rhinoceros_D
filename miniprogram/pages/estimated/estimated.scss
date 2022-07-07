@@ -35,6 +35,19 @@
        justify-content: center;
        align-items: center;
        color: #3194ee;
+       .con{
+         margin: 5rpx;
+        border: 4rpx solid #3194ee;
+        border-radius: 15rpx;
+        padding: 0 10rpx;
+        color: rgb(15, 46, 129);
+       }
+       .title{
+         font-weight: 700;
+       }
+       .channelP{
+         font-size: 27rpx;
+       }
      }
      .weight:nth-child(2){
       flex: 0.5;
@@ -45,6 +58,19 @@
       align-items: center;
       flex-direction: column;
       color: #2bb03f;
+      .tltle{
+        font-weight: 700;
+      }
+      .field{
+        height: 50rpx;
+        width: 200rpx;
+        margin: 15rpx auto;
+        border: 4rpx solid rgb(0, 145, 24);
+        border-radius: 15rpx;
+        font-size: 30rpx;
+        padding-left: 15rpx;
+        box-sizing: border-box;
+      }
     }
     .weight{
       border-radius: 28rpx;
@@ -62,15 +88,32 @@
     background-color: #90aef6;
     box-shadow: 0rpx 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
     color: rgb(55, 116, 165);
+    .huoqu{
+      font-size: 25rpx;
+      font-weight: 700;
+      width: 400rpx;
+      height: 70rpx;
+      border: 4rpx solid #3194ee;
+      border-radius: 28rpx;
+      padding: 0 20rpx;
+    }
+    .title{
+      font-weight: 700;
+    }
   }
   .child:nth-child(4){
     background-color: #0b73f7;
     border-radius: 28rpx;
     box-shadow: 0rpx 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30rpx;
     color: white;
+    .van-button{
+      background-color: #399b39;
+      height: 60rpx;
+    }
 }
 }

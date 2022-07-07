@@ -36,23 +36,21 @@
     </view>
     <!-- 快递个数 -->
     <view class="courier2">
-      <van-field value="{{ phone }}" label="*快递个数" placeholder="输个数,生成单号输入框" error-message="{{numbertip}}" 
-      border="{{ false }}" title-width="65" bindchange="numberTip"  />
+      <van-field  model:value="{{ number }}" label="*快递个数" placeholder="输个数,生成单号输入框" title-width="65" bindblur="changenum" disabled="{{isdisabled}}"  />
     </view>
     <!-- 快递备注 -->
     <view class="courier3">
       <view class="courier3_b">
-        <van-field value="{{ message }}"label="备注" type="textarea"  placeholder="请输入备注" autosize border="{{ false }}" title-width="30"  />
+        <van-field value="{{ message }}"label="备注" type="textarea"  placeholder="请输入备注" autosize title-width="30" disabled="{{isdisabled}}" />
       </view>
     </view>
     <!-- 快递单号输入框生成 -->
     <view class="courier4">
     <!-- 循环生成快递单号 -->
       <van-cell-group>
-         <view class="chlid" wx:for="{{quantity}}" wx:key="*this">
-          <van-field value="{{ odd }}" label="{{index + 1}}."  placeholder="请输入快递单号" error-message="单号错误"
-          title-width="2"/>
-          <view class="icon" catchtap="deorder"><van-icon name="delete-o" /></view>
+         <view class="chlid" wx:for="{{showvalue}}" wx:key="id">
+          <van-field  label="{{index + 1}}."  placeholder="请输入快递单号" bindinput="getorder" data-index="{{item.id}}" title-width="2"/>
+          <view class="icon" catchtap="delete" data-index="{{item.id}}"><van-icon name="delete-o" /></view>
          </view>
       </van-cell-group>
       <button class="supplement" catchtap="addorder">+ 补充快递单号</button>

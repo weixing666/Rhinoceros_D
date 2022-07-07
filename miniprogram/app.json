@@ -43,7 +43,15 @@
     "pages/pack/pack",
     "pages/unpaid/unpaid",
     "pages/Addaddress/Addaddress",
-    "pages/addressbook/addressbook"
+    "pages/addressbook/addressbook",
+    "pages/toevaluate/toevaluate",
+    "pages/picking/picking",
+    "pages/awaitpay/awaitpay",
+    "pages/support/support",
+    "pages/paydetail/paydetail",
+    "pages/payfulfill/payfulfill",
+    "pages/ticketdeial/ticketdeial"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

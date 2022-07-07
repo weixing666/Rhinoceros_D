@@ -1,4 +1,5 @@
-// pages/my/my.ts
+
+let appdata = getApp()
 Page({
 
   /**
@@ -12,9 +13,34 @@ Page({
       url: `/pages/informed/informed?isshow=${this.data.isshow}`
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  // 去我的订单
+  goorder(){
+    appdata.globalData.active = 0
+    wx.switchTab({
+      url:"/pages/orderdelist/orderdelist?id=5"
+    })
+  },
+
+  // go待付款
+  obligation(){
+    appdata.globalData.active = 1
+    wx.switchTab({
+      url:"/pages/orderdelist/orderdelist"
+    })
+  },
+  // 去已支付
+  goawaitorder(){
+    appdata.globalData.active = 2
+    wx.switchTab({
+      url:"/pages/orderdelist/orderdelist"
+    })
+  },
+  // 去评价
+  gotoevaluate(){
+    wx.navigateTo({
+      url:`/pages/toevaluate/toevaluate`
+    })
+  },
   onLoad() {
 
   },

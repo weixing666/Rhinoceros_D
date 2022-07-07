@@ -36,7 +36,7 @@
     </view>
     <!-- 快递个数 -->
     <view class="courier2">
-      <van-field value="{{ phone }}" label="*快递个数" placeholder="输个数,生成单号输入框" error-message="{{numbertip}}" 
+      <van-field model:value="{{ value }}" label="*快递个数" placeholder="输个数,生成单号输入框" error-message="{{numbertip}}" 
       border="{{ false }}" title-width="65" bindchange="numberTip"  />
     </view>
     <!-- 快递备注 -->

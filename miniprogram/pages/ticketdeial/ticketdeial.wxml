@@ -1,0 +1,48 @@
+<view class="content"> 
+   <view class="uitap">
+      <view class="z_uitap">
+          <view>
+            <text class="fuhao">￥</text>
+            <text class="num">10</text>
+          </view>
+          <view>
+            满￥599使用
+          </view>
+      </view>
+      <view class="z_uitap">
+        <view class="manjian">
+          <view class="quan">满减券</view>
+          <view class="man">双十一无门槛10元券</view>
+        </view>
+        <view class="lingqu">
+          <text class="time">2018.04.11到期</text>
+          <text class="data">(仅剩1天) </text>
+          <view class="bth">立即领取</view>
+        </view>
+      </view>
+   </view>
+</view>
+
+<view class="tap">
+  <view>全场通用</view>
+  <view class="jiantou"><image src="../../assets/smoicon/28.png"></image></view>
+</view>
+
+<view class="deli">
+  <view class="dechild">使用须知</view>
+  <view class="dechild">有效期：</view>
+  <view class="dechild">2022-04-29至2022-06-01 23:59</view>
+  <view class="dechild">不可用日期：</view>
+  <view class="dechild">2022年2月1日至2022年2月4日，12月26日以后开始</view>
+  <view class="dechild">使用</view>
+  <view class="dechild">使用时间：</view>
+  <view class="dechild">00:00-23:59</view>
+  <view class="dechild">适用范围：</view>
+  <view class="dechild">全场通用</view>
+  <view class="dechild">使用规则</view>
+  <view class="dechild">。适用于运费</view>
+  <view class="dechild">。适用于普通货物，电子产品</view>
+  <view class="dechild">。使用优惠券下单，有效期以优惠券规则为准</view>
+  <view class="dechild">。不可叠加使用</view>
+  <view class="dechild">。不兑现、不提现</view>
+</view>

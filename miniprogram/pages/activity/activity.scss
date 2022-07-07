@@ -1,1 +1,12 @@
-/* pages/activity/activity.wxss */
+.noe{
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+  align-items: center;
+  color: #7c7c7c;
+  font-size: 30rpx;
+  image{
+    height: 646rpx;
+  }
+
+}

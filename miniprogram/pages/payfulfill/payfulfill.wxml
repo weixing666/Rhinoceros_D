@@ -1,0 +1,15 @@
+<view class="content">
+  <view class="child">
+    <image src="../../assets/smoicon/27.png"></image>
+  </view>
+  <view class="child stats">
+      支付成功
+  </view>
+  <view class="kefu">
+    橙子会在24小时内为您发货，并推送信息给您，
+请您耐心等待，3秒钟后为您跳转
+  </view>
+  <view class="child son">
+    <van-button plain type="primary" catchtap="primarys">完成</van-button>
+  </view>
+</view>

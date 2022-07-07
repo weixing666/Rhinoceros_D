@@ -1,0 +1,22 @@
+.content{
+  padding: 230rpx 50rpx;
+  .child{
+    margin: 20rpx;
+    text-align: center;
+    image{
+      width: 142rpx;
+      height: 140rpx;
+    }
+    
+  }
+  .stats{
+    color: #00b700;
+  }
+  .kefu{
+    margin: 90rpx 50rpx;
+  }
+  .van-button{
+    width: 360rpx;
+    border-radius: 20rpx;
+  }
+}

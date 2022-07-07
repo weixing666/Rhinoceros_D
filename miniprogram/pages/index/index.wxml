@@ -10,6 +10,9 @@
     <view><image src="../../assets/swiper/1.png" mode="aspectFit"></image></view>
   </swiper-item>
 </swiper>
+
+<view class="color"></view>
+
   <view class="country">
       <view class="t-con">
         <view>中国</view>
@@ -17,7 +20,7 @@
         <view catchtap="selectional">美国</view>
       </view>
       <view class="b-con" catchtap="showPopup">立即转运</view>
-      <van-popup show="{{ show }}" bind:close="onClose">
+      <van-popup show="{{ show }}" bind:close="onClose" round>
         <!-- 弹窗内容 -->
           <view class="popup">
             <van-picker id="van-toast" columns="{{ columns }}" bind:change="onChange" show-toolbar title="预选渠道"  bind:cancel="onCancel" bind:confirm="onConfirm"/>
@@ -33,9 +36,9 @@
         <view class="text1">联系河马</view>
         <view class="text2">为你解决下单疑问</view>
       </view>
-      <view class="item3">
+      <button class="item3" open-type="contact">
       <image src="../../assets/smoicon/4.png"></image>
-      </view>
+      </button>
     </view>
   </view>
 <view class="carriage">

@@ -1,2 +1,4 @@
-<!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view class="noe">
+  <image src="../../assets/smoicon/18.png"></image>
+  <view>亲 , 暂时还没有活动哦 ! ~</view>
+</view>

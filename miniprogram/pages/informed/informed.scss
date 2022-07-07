@@ -1,4 +1,6 @@
 .content{
+  height: 80vh;
+  overflow-y: auto;
   .affirm{
     display: flex;
     flex-direction: column;
@@ -56,5 +58,16 @@
 .read{
   .van-button{
     width: 250rpx;
+  }
+}
+
+.boxbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80rpx;
+  .van-button{
+    width: 200rpx;
+    height: 80rpx;
   }
 }

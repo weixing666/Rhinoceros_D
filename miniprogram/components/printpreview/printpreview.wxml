@@ -1,0 +1,25 @@
+<view class="printpreview">
+    <view class="bos"><text class="titleall">运费：</text>¥ 138.00</view>
+    <view class="bos"><text class="titleall">附加费：</text>¥ 0.00</view>
+    <view class="bos"><text class="titleall">称重重量：</text>5.6 kg</view>
+    <view class="bos"><text class="titleall">分拣备注：</text><text class="colo">已拆封分拣，统一归类</text></view>
+    <view class="bos"><text class="titleall">打包备注：</text><text class="colo">东西太多，已统一打包加固</text></view>
+    <view class="bos"><text class="titleall">称重图片：</text></view>
+    <view class="weighimg bos">
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+      <image src="../../assets/smoicon/25.png" class="ims"></image>
+    </view>
+    <view class="bos titleall">账单：</view>
+    <view class="detail bos">
+      <view class="child"><image class="img" src="../../assets/smoicon/25.png"></image></view>
+      <view class="child">
+        <view class="title">包裹一</view>
+        <view  class="del">属性：普通货物</view>
+        <view  class="del">长宽高：12*5*5 CM</view>
+        <view  class="del">计费重量：1.25KG</view>
+        <view  class="del">计费方式：实际重量</view>
+        <view  class="del">运费：￥125G</view>
+      </view>
+    </view>
+</view>
