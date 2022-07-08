@@ -1,23 +1,40 @@
-// pages/support/support.ts
-Page({
 
-  /**
-   * 页面的初始数据
-   */
+Page({
   data: {
-    checked: true,
+    checked1: false,
+    checked2: false,
     show:false,
+    supportvalue:null,
   },
 
-  onChange(event:any) {
+  // 保价的百分之3
+  onChange1(event:any) {
     this.setData({
-      checked: event.detail,
+      checked1: event.detail,
     });
   },
-  confirm(){
+  // 保价的百分之2
+  onChange2(event:any) {
     this.setData({
-      show:true
-    })
+      checked2: event.detail,
+    });
+  },
+
+
+  confirm(){
+    // 如果没选保险,弹窗提醒
+    if(!this.data.checked1 && !this.data.checked2){
+      this.setData({
+        show:true
+      })
+    }else{
+        // 选了保险
+        wx.navigateTo({
+          url:`/pages/paydetail/paydetail`
+        })
+    }
+   
+    
   },
   onLoad() {
 
@@ -25,9 +42,8 @@ Page({
 
   // 点击了购买保险
   yespay(){
-    console.log(1);
-    wx.navigateTo({
-      url:`/pages/paydetail/paydetail`
+    this.setData({
+      show:false
     })
   },
   // 点击了承担风险

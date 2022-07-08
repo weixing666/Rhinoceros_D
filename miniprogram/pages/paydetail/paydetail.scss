@@ -165,3 +165,49 @@ box-sizing: border-box;
     width: 400rpx;
   }
 }
+
+.quan{
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  .title{
+    text-align: center;
+    font-size: 40rpx;
+    font-weight: 700;
+  }
+  .cart{
+    margin: 10rpx 0;
+    display: flex;
+    height: 140rpx;
+    justify-content:space-between;
+    .son_tltle{
+      font-size: 32rpx;
+      margin-bottom: 8rpx;
+    }
+    .son_content{
+      font-size: 25rpx;
+      color: #88888f;
+      font-weight: 600;
+    }
+    .cart_child:nth-child(2){
+      display: flex;
+      align-items: center;
+      .yuan{
+        margin-right: 10rpx;
+        color: #f65e2f;
+      }
+    }
+  }
+  
+}
+.btnquan{
+  display: flex;
+  justify-content:space-around;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+  .van-button{
+    width: 300rpx;
+  }
+}

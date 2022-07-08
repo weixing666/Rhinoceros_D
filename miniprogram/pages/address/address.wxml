@@ -23,26 +23,26 @@
           <van-cell-group>
              <view class="child">
               <view class="title">Name：</view> 
-              <van-field  value="{{ Name }}" placeholder="Please fill in the recipient‘s name" error-message="{{tipName}}" bindinput="nametip"/>
+              <van-field  value="{{ Adress.Name }}" placeholder="Please fill in the recipient‘s name" error-message="{{tipName}}" bindinput="nametip"/>
              </view>
              <view class="child">
               <view class="title">Phone：</view> 
-              <van-field  value="{{ phone }}" placeholder="Please fill in the recipient‘s phone" error-message="{{tipphone}}"
+              <van-field  value="{{ Adress.phone }}" placeholder="Please fill in the recipient‘s phone" error-message="{{tipphone}}"
               bindblur="phonetip"/>
              </view>
              <view class="child">
               <view class="title">Address：</view> 
-              <van-field  value="{{ Address }}" placeholder="Please fill in the address" error-message="{{tipAddress}}"
+              <van-field  value="{{ Adress.Address }}" placeholder="Please fill in the address" error-message="{{tipAddress}}"
               bindinput="Address"/>
              </view>
              <view class="child">
               <view class="title">City：</view> 
-              <van-field  value="{{ City }}" placeholder="Please fill in the city" error-message="{{tipCity}}"
+              <van-field  value="{{ Adress.City }}" placeholder="Please fill in the city" error-message="{{tipCity}}"
               bindinput="City"/>
              </view>
              <view class="child">
               <view class="title">PostCode：</view> 
-              <van-field  value="{{ PostCode }}" placeholder="Please fill in the postcode" error-message="{{tipPostCode}}"
+              <van-field  value="{{ Adress.PostCode }}" placeholder="Please fill in the postcode" error-message="{{tipPostCode}}"
               bindinput="PostCode"/>
              </view>
           </van-cell-group>

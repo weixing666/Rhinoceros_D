@@ -50,7 +50,8 @@
     "pages/support/support",
     "pages/paydetail/paydetail",
     "pages/payfulfill/payfulfill",
-    "pages/ticketdeial/ticketdeial"
+    "pages/ticketdeial/ticketdeial",
+    "pages/orderstatus/orderstatus"
 
   ],
   "window": {

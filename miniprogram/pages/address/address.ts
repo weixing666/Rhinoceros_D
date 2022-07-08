@@ -8,12 +8,14 @@ Page({
     tipAddress:"",
     tipCity:"",
     tipPostCode:"",
-    // 用户输入的值
-    Name:"",
-    phone:"",
-    Address:"",
-    City:"",
-    PostCode:"",
+    // 保存本次用户选择的地址,用户输入的值
+    Adress:{
+      Name:"",
+      phone:"",
+      Address:"",
+      City:"",
+      PostCode:"",
+    },
   },
 
   //验证名字 
@@ -136,11 +138,18 @@ Page({
   },
   select(){
     wx.navigateTo({
-      url:`/pages/myaddress/myaddress`
+      url:`/pages/myaddress/myaddress?select=1`
     })
   },
-  onLoad() {
-
+  onLoad(optins:any) {
+    let {Adress} = optins
+    if(Adress){
+      let Adres = JSON.parse(Adress)
+      this.setData({
+        Adress:Adres
+      })
+    }
+    
   },
 
   onReady() {

@@ -5,16 +5,48 @@ Page({
     active: 0, //默认激活_选项卡
     acknowledge:1,  //确认打包
     gopay:2, //去支付
-
+    tab:[
+      {active:0,title:"全部"},
+      {active:1,title:"待支付"},
+      {active:2,title:"已支付"},
+      {active:3,title:"已完成"},
+    ],
     // 状态
-    state:{
-      0:"待处理",
-      1:"待入仓",
-      2:"待拣货",
-      3:"待打包",
-      4:"待出仓",
-      5:"已出仓",
-      6:"有异常"
+    orderinfo:{
+      // 地址信息
+      sendAddress:{
+        
+      },
+      consaddress:{
+
+      },
+      // 快递信息
+      express:{
+      parnum:null, //快递个数
+      annotation:null,//备注
+      parorder:[], //快递单号
+      },
+      // 订单信息
+      ordmessage:{
+      order:null,
+      path:null, //
+      channel:"", //渠道
+      orderstatus:{
+        0:"待处理"
+      }, //订单状态
+      ordertime:""
+      },
+      // 状态注解
+      arr:[
+        {0:"待处理"},
+        {1:"待入仓"},
+        {2:"待拣货"},
+        {3:"待打包"},
+        {4:"待出仓"},
+        {5:"已出仓"},
+        {6:"有异常"},
+      ]
+
     }
     
   },
@@ -23,13 +55,11 @@ Page({
       url:`/pages/pack/pack`,
     })
   },
-  // 组件里面的切换触发函数
+  // 切换tap栏触发函数
   onChange(e:any) {
-    console.log(e);
-    // wx.showToast({
-    //   title: `切换到标签 ${e.detail.name}`,
-    //   icon: 'none',
-    // });
+    this.setData({
+      active:e.detail.index
+    })
   },
   // 确认打包
   packaging(){

@@ -1,6 +1,16 @@
-<view class="titletop">您的快递包裹已全部到达仓库，请及时确认捡货打包。</view>
+<!-- 待入仓状态 -->
+<block>
+  <view class="titletop1">您的快递包裹已全部到达仓库，请及时确认捡货打包。</view>
+</block>
+
+<!-- 待拣货状态 -->
+<block>
+  <view class="titletop2">您的快递包裹正在拣货中</view>
+</block>
+
 
 <view class="content">
+  <!-- 仓库地址 -->
   <view class="son son1">
     <view class="son1_t">
         <view class="l_son1"><van-icon name="location-o" /></view>
@@ -29,36 +39,34 @@
         </view>
     </view>
   </view>
-  <!-- 快递区域大盒子 -->
+  <!-- 快递单号 -->
   <view class="son son2">
-  <!-- 提示 -->
     <view class="courier">
       <view><van-icon name="warning-o" /></view>
       <view>快递全部到齐点击确认打包后，订单不可修改</view>
     </view>
-    <!-- 快递个数 -->
     <view class="courier2">
-      <van-field  model:value="{{ number }}" label="*快递个数" placeholder="输个数,生成单号输入框" title-width="65" bindblur="changenum" disabled="{{isdisabled}}"  />
+      <van-field  model:value="{{ number }}" label="*快递个数" placeholder="输个数,生成单号输入框" title-width="65" bindblur="changenum" disabled="{{isdisabled }}" maxlength="2" type="number" bindinput="tipnums"/>
     </view>
-    <!-- 快递备注 -->
     <view class="courier3">
       <view class="courier3_b">
-        <van-field value="{{ message }}"label="备注" type="textarea"  placeholder="请输入备注" autosize title-width="30" disabled="{{isdisabled}}" />
+        <van-field value="{{ message }}"label="备注" type="textarea"  placeholder="请输入备注,限40字" autosize title-width="30" maxlength="40"/>
       </view>
     </view>
-    <!-- 快递单号输入框生成 -->
     <view class="courier4">
-    <!-- 循环生成快递单号 -->
       <van-cell-group>
-         <view class="chlid" wx:for="{{showvalue}}" wx:key="id">
-          <van-field  label="{{index + 1}}."  placeholder="请输入快递单号" bindinput="getorder" data-index="{{item.id}}" title-width="2" disabled="{{orderdisabled}}"/>
-          <view class="awaitpen">待入仓</view>
-         </view>
+        <view class="chlid" wx:for="{{showvalue}}" wx:key="id">
+              <van-field  label="{{index + 1}}."  placeholder="请输入快递单号" bindinput="getorder" data-index="{{item.id}}" maxlength="30" 
+              bindinput="getorder"  title-width="8" bindblur="tip" disabled="{{item.disabled }}"/>
+              <!-- <view class="icon" catchtap="delete" data-index="{{item.id}}"><van-icon name="delete-o" /></view> -->
+              <!-- <view class="icon" catchtap="delete" data-index="{{item.id}}"><view class="awaitpen1">待入仓</view></view> -->
+              <view class="icon" catchtap="delete" data-index="{{item.id}}"><view class="awaitpen2">已入库</view></view>
+        </view>
       </van-cell-group>
       <button class="supplement" catchtap="addorder">+ 补充快递单号</button>
     </view>
   </view>
-  <!-- 订单详情查看 -->
+  <!-- 订单详情 -->
   <view class="son son3">
     <view class="hid"><text>订单号：20220509140712345678</text><text class="copy">复制</text></view>
     <view class="hid">转运线路：中国 - 美国</view>
@@ -67,11 +75,18 @@
     <view class="hid">下单时间：2022-05-09 14:07:12</view>
   </view>
 
-  <!-- 底部按钮 -->
+  <!-- 底部按钮 ==> 提交订单-->
   <view class="bot">
     <button class="br1" open-type="contact">联系客服</button>
-    <button class="br2" catchtap="submit">确认打包</button>
+    <button class="br2" catchtap="submit">提交订单</button>
+    <!-- <button class="br2" catchtap="submit">确认打包</button> -->
   </view>
+
+
+
+
+
+
 </view>
 
 <cate></cate>

@@ -1,7 +1,9 @@
 // app.ts
 App<IAppOption>({
   globalData: {
-    active:0, //待付款
+    active:0, // 标记待付款
+    country:"美国",
+
   },
   onLaunch() {
     // 展示本地存储能力

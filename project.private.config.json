@@ -9,7 +9,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/ticketdeial/ticketdeial",
+          "pathName": "pages/paydetail/paydetail",
           "query": "",
           "launchMode": "default",
           "scene": null

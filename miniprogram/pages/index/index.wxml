@@ -17,7 +17,7 @@
       <view class="t-con">
         <view>中国</view>
         <view class="item_2"><image src="../../assets/smoicon/feji.png" mode="aspectFit"></image></view>
-        <view catchtap="selectional">美国</view>
+        <view catchtap="selectional">{{country}}</view>
       </view>
       <view class="b-con" catchtap="showPopup">立即转运</view>
       <van-popup show="{{ show }}" bind:close="onClose" round>

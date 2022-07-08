@@ -8,7 +8,7 @@
     <view>保价</view>
   </view>
   <view class="child">
-    <input type="text" placeholder="自定义物品价格，请填写真实物品价格" class="input"/>
+    <input type="number" placeholder="自定义物品价格，请填写真实物品价格" class="input" model:value="{{supportvalue}}"/>
   </view>
 </view>
 
@@ -25,7 +25,7 @@
   
   <view class="child">
     <view>丢失（保价的3%)</view>
-    <view><van-switch checked="{{ checked }}" bind:change="onChange" size="38rpx"/></view>
+    <view><van-switch checked="{{ checked1 }}" bind:change="onChange1" size="38rpx"/></view>
   </view>
   <view class="child">
     <view>保险费：¥ 30.00</view>
@@ -48,7 +48,7 @@
   
   <view class="child">
     <view>关税险（保价的2%）</view>
-    <view><van-switch checked="{{ checked }}" bind:change="onChange" size="38rpx"/></view>
+    <view><van-switch checked="{{ checked2 }}" bind:change="onChange2" size="38rpx"/></view>
   </view>
   <view class="child">
     <view>保险费：¥ 20.00</view>
@@ -73,6 +73,7 @@
   cancelButtonText="承担风险"
   bind:confirm="yespay"
   bind:cancel="nopay"
+  close-on-click-overlay
 >
   <view class="confirmadres">
   <view class="tltle">尊敬的客户:</view>

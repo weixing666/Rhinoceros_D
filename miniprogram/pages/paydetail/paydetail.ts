@@ -2,9 +2,9 @@
 Page({
 
   data: {
-    checked: false, //复选框
-    ispro:false, //里面同意按钮
-
+    checked:false, //复选框
+    ispro:false, // 里面同意按钮协议的按钮,控制弹出层
+    isquan:false, //优惠券弹出层
   },
 
   // 点击复选框
@@ -16,6 +16,26 @@ Page({
     console.log(55);
     this.setData({ checked: true ,ispro:false});
   },
+  // 弹出选择优惠券
+  quan(){
+    this.setData({
+      isquan:true
+    })
+  },
+  // 点击遮罩关闭协议弹窗
+  shut(){
+    this.setData({
+      ispro:false
+    })
+  },
+  // 点击遮罩关闭优惠券弹窗
+  guaquan(){
+    this.setData({
+      isquan:false
+    })
+  },
+
+
   // 立即支付
   pay(){
     if(this.data.checked === false){

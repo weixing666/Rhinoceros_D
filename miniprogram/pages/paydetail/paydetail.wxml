@@ -47,7 +47,7 @@
     <view>关税险</view>
     <view>￥28.00</view>                                                 
   </view>
-  <view class="childel ticket">
+  <view class="childel ticket" catchtap="quan">
     <view class="icontitle"><van-icon name="coupon-o" class="coupon"/><text class="text">优惠券</text></view>
     <view class="yuan">-￥8 > </view>
   </view>
@@ -79,6 +79,7 @@
   position="bottom"
   custom-style="height: 70%"
   bind:close="onClose"
+  bind:click-overlay="shut"
 >
   <view class="contentxieyi">
    <view class="title">转运协议</view>
@@ -130,5 +131,53 @@
 
   <view class="btn"> 
     <van-button round type="info" catchtap="consent">同意本条款</van-button>
+  </view>
+</van-popup>
+
+<!-- 优惠券弹出层 -->
+<van-popup
+  show="{{ isquan }}"
+  round
+  position="bottom"
+  custom-style="height:60%"
+  bind:click-overlay="guaquan"
+>
+<view class="quan">
+    <view class="title">选择优惠券</view>
+    <view class="cart">
+        <view class="cart_child">
+          <view class="son_tltle">优惠券1</view>
+          <view class="son_content">14天后到期 * 指定国家可用</view>
+        </view>
+        <view class="cart_child">
+            <view class="yuan">-￥2000.00</view>
+            <view><van-checkbox value="{{ checked }}" bind:change="ange"></van-checkbox></view>
+        </view>
+    </view>
+    <view class="cart">
+        <view class="cart_child">
+          <view class="son_tltle">优惠券1</view>
+          <view class="son_content">14天后到期 * 指定国家可用</view>
+        </view>
+        <view class="cart_child">
+            <view class="yuan">-￥2000.00</view>
+            <view><van-checkbox value="{{ checked }}" bind:change="ange"></van-checkbox></view>
+        </view>
+    </view>
+    <view class="cart">
+        <view class="cart_child">
+          <view class="son_tltle">优惠券1</view>
+          <view class="son_content">14天后到期 * 指定国家可用</view>
+        </view>
+        <view class="cart_child">
+            <view class="yuan">-￥2000.00</view>
+            <view><van-checkbox value="{{ employ }}" bind:change="ange"></van-checkbox></view>
+        </view>
+    </view>
+</view>
+
+  <view class="btnquan">
+    <van-button round type="info">兑换更多</van-button>
+    <van-button round type="info">确认使用</van-button>
   </view>
 </van-popup>

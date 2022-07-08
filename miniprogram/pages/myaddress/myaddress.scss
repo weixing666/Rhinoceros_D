@@ -69,11 +69,16 @@
   display: flex;
   padding: 0 40rpx;
   justify-content:space-between;
-  margin-bottom: 40rpx;
-  // background-color: #f2f2f2;
-  .iocn{
-    font-size: 600rpx;
+  margin-bottom:40rpx;
+  .setting{
+    display: flex;
+    align-items: center;
+  }
+  .setting2{
     color: #1296db;
+    .van-icon{
+      margin-left: 10rpx;
+    }
   }
   view:nth-child(1){
     display: flex;

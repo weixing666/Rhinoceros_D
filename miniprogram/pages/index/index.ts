@@ -1,9 +1,11 @@
 
 const app = getApp<IAppOption>()
+let appdata = getApp()
 Page({
   data: {
     show: false,//弹窗
     columns: ['普通货物', '电子产品', '液体粉末', '内地EMS', '广东EMS'],
+    country:""
   },
 
   // 展示弹窗
@@ -49,12 +51,12 @@ Page({
       url:`/pages/copyaddress/copyaddress`
     })
   },
-  onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
-    }
+  onLoad() { 
+  },
+  onShow(){
+    this.setData({
+      country:appdata.globalData.country
+    })
   },
   getUserProfile() {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

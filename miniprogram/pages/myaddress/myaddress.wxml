@@ -7,7 +7,7 @@
 <!-- 非空地址显示 -->
 
 <!-- 默认地址 -->
-<view class="default">
+<!-- <view class="default">
     <view class="child">
       <view class="title">我</view>
     </view>
@@ -27,30 +27,45 @@
       <van-icon name="edit" class="iocn" />
       <van-icon name="delete-o" class="iocn "/>
   </view>
-</view>
+</view> -->
 
 <!-- 可以设置为默认地址 -->
-<view class="default">
+<block wx:for="{{myaddresslist}}" wx:key="item.id">
+  <view class="default" catchtap="capture" data-id="{{item.id}}">
     <view class="child">
       <view class="title">我</view>
     </view>
     <view class="child">
       <view class="son">
-        <view>KK</view>
-        <view>186****0130</view>
+        <view>{{item.Name}}</view>
+        <view>{{item.phone}}</view>
       </view>
       <view>
-       <view class="address">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+       <view class="address">{{item.Address}}{{item.City}}{{item.PostCode}}</view>
       </view>
     </view>
 </view>
 <view class="tail">
-  <view><van-checkbox value="{{ ischecked }}" bind:change="onChange"></van-checkbox> <text class="addres">设置为默认寄样地址</text></view>
-  <view>
-      <van-icon name="edit" class="iocn" />
-      <van-icon name="delete-o" class="iocn "/>
+  <view class="setting">
+        <block wx:if="{{item.isdefault}}">
+          <view>
+            <van-checkbox value="{{ item.isdefault }}"></van-checkbox>
+            <text class="addres">默认寄样地址</text>
+        </view>
+        </block>
+        
+        <block wx:else>
+          <van-checkbox value="{{ item.isdefault }}" bind:change="onChange" data-id="{{item.id}}"></van-checkbox> 
+          <text class="addres">设置为默认寄样地址</text>
+        </block>
+  </view>
+  <view class="setting2">
+      <van-icon name="edit"  class="edit" size="40rpx" catchtap="edit" data-id="{{item.id}}"/>
+      <van-icon name="delete-o" class="delete" size="40rpx" catchtap="delete" data-id="{{item.id}}"/>
   </view>
 </view>
+</block>
+
 
 <view class="addaddress">
   <van-button round type="info" size="small" catchtap="address">添加地址</van-button>

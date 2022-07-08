@@ -1,5 +1,5 @@
 <van-tabs active="{{ active }}" bind:change="onChange" color="#71c7ff" sticky="true">
-  <van-tab title="全部">
+  <van-tab title="{{item.title}}" wx:for="{{tab}}" wx:key="item.active">
       <view class="box">
          <view class="son">
           <text>订单号：20220509140712345678</text>
@@ -7,18 +7,25 @@
          </view>
          <view class="son">
             <view>中国</view>
-            <view><image src="../../assets//smoicon/10.png" alt="" class="img"/>
+            <view>
+              <image src="../../assets//smoicon/10.png" alt="" class="img"/>
               <view class="state">待入仓</view>
+              <!-- <view class="state">待填写</view>
+              <view class="state">待支付</view>
+              <view class="state">已出仓</view>
+              <view class="state">已完成</view> -->
             </view>
             <view>米国</view>
          </view>
          <view class="son">
           <view class="btn1 btn" catchtap="packaging">确认打包</view>
-          <view class="btn2 btn" catchtap="examine">详情</view>
+          <!-- <view class="btn1 btn" catchtap="gopay">确认打包</view>
+          <view class="btn1 btn" catchtap="gopay">物流详情</view>
+          <view class="btn2 btn" catchtap="examine">详情</view> -->
          </view>
       </view>
   </van-tab>
-  <van-tab title="待支付">
+  <!-- <van-tab title="待支付">
     <view class="box">
          <view class="son">
           <text>订单号：20220509140712345678</text>
@@ -74,5 +81,5 @@
           <view class="btn2 btn" catchtap="examine">详情</view>
          </view>
       </view>
-  </van-tab>
+  </van-tab> -->
 </van-tabs>

@@ -1,0 +1,200 @@
+.content{
+  .son{
+    width: 694rpx;
+    // height: 358rpx;
+    font-size: 30rpx;
+    box-shadow: 0px 4rpx 20rpx 0px rgba(0, 0, 0, 0.4);
+    margin: 50rpx auto;
+    padding: 20rpx;
+    box-sizing: border-box;
+  }
+  .bot{
+    height: 114rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    view,button{
+      border-radius: 0;
+      text-align: center;
+      width: 376rpx;
+      height: 114rpx;
+      line-height: 114rpx;
+      color: white;
+    }
+    .br1{
+      // flex: 0.5;
+      background-color: #1296db;
+
+    }
+    .br2{
+      // flex: 0.5;
+      background-color:#6dcf2bbb
+    }
+  }
+  .son3{
+    padding: 30rpx;
+    box-sizing: border-box;
+    .hid{
+      height: 40rpx;
+      width: 100%;
+      margin: 20rpx 0;
+      .copy{
+        font-size: 24rpx;
+        padding: 5rpx;
+        background-color: rgba(217, 241, 221, 100);
+        border-radius: 4px;
+        color: rgba(64, 184, 80, 100);
+      }
+    }
+  }
+  .son2{
+    .courier{
+      display: flex;
+      color: #ec0656;
+      font-size: 27rpx;
+      justify-content: center;
+    }
+    .courier2{
+      display: flex;
+      align-items: center;
+      padding: 20rpx 50rpx;
+    }
+    .courier3{
+        .courier3_b{
+          width: 560rpx;
+          height: 150rpx;
+          border: 2rpx solid rgba(187, 187, 187, 100);
+          border-radius: 14rpx;
+          border: 1px solid rgba(187, 187, 187, 100);
+          margin: 0 auto;
+          padding: 4rpx 4rpx;
+        }
+    }
+    .courier4{
+      .chlid{
+        position: relative;
+        .icon{
+          font-size:40rpx;
+          position: absolute;
+          top:20rpx;
+          right: 50rpx;
+          color: #a6a6a6;
+          z-index: 99999999999;
+        }
+        
+        .awaitpen1{
+          width: 90rpx;
+          height: 32rpx;
+          line-height: 32rpx;
+          font-size:28rpx;
+          position: absolute;
+          top:10rpx;
+          right: 0rpx;
+          color: rgba(76, 22, 142, 100);
+          border-radius: 4px;
+          z-index: 99999999999;
+          border: 1px solid rgba(255, 255, 255, 79);
+          background-color:#b39acd;
+          text-align: center;
+        }
+        .awaitpen2{
+          width: 90rpx;
+          height: 32rpx;
+          line-height: 32rpx;
+          font-size:28rpx;
+          position: absolute;
+          top:10rpx;
+          right: 0rpx;
+          color:#e7691d;
+          border-radius: 4px;
+          z-index: 99999999999;
+          border: 1px solid rgba(255, 255, 255, 79);
+          background-color:#fde5d2;
+          text-align: center;
+        }
+      }
+      .supplement{
+        width: 280rpx;
+        margin:30rpx auto;
+        background-color: rgba(255, 255, 255, 100);
+        color: rgba(64, 184, 80, 100);
+        font-size: 24rpx;
+        text-align: center;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(64, 184, 80, 100);
+      }
+    }
+  }
+  .son1{
+      padding: 20rpx;
+      box-sizing: border-box;
+      
+      .son1_t{
+        display: flex;
+        height: 159rpx;
+        .l_son1{
+          font-size: 62rpx;
+          color: #1a8cd5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .r_son1{
+          padding: 30rpx;
+          box-sizing: border-box;
+          .r_son1_f{
+            color: rgba(153, 153, 153, 100);
+            font-size: 28rpx;
+          }
+          .r_son1_a{
+            .r_son1_b{
+              font-size: 30rpx;
+              color: rgba(16, 16, 16, 100);
+              font-weight: 700;
+              margin-right:15rpx;
+            }
+            .r_son1_c{
+              margin-right: 15rpx;
+            }
+            .r_son1_d{
+              border-radius: 8rpx;
+              background-color: rgba(217, 241, 221, 100);
+              color: rgba(64, 184, 80, 100);
+              font-size: 24rpx;
+              border: 2rpx solid rgba(217, 241, 221, 100);
+              text-align: center;
+            }
+            .r_son1_f{
+              margin: 40rpx 0;
+            }
+          }
+        }
+      }
+  }
+
+}
+
+
+.titletop1{
+  height: 70rpx;
+  width: 100%;
+  font-size: 28rpx;
+  background-color: #387ca0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #ececec;
+}
+.titletop2{
+  height: 70rpx;
+  width: 100%;
+  font-size: 28rpx;
+  background-color:#ffbb83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #4d4d4d;
+}
